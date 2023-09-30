@@ -1,4 +1,4 @@
-/*общее*/
+/*general*/
 html {
     box-sizing: border-box;
 }
@@ -21,24 +21,52 @@ body {
     margin: 0 auto;
 }
 
-/*классы header*/
+/*header styles start*/
 .header {
-    background-color: #000000;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .header__wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+    justify-content: space-between;
 }
 
-
-.header_logo {
-
-}
-.header_logo-link {
+.header__logo {
 
 }
-.header_logo-pic {
+.header__logo-link {
 
+}
+.header__logo-pic {
+
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__item {
+    margin-right: 80px;
+}
+
+.header__item:last-child {
+    margin-right: 0;
+}
+
+.header__link {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.header__link:hover, .header__link:focus, .header__link:active {
+    opacity: .75;
 }
