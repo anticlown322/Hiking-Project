@@ -1,6 +1,33 @@
-html{
+html {
     box-sizing: border-box;
 }
-*, *::before, *::after{
+
+*, *::before, *::after {
     box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #000000;
+}
+
+.wrapper {
+    width: 1440px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #000000;
+}
+.header_logo {
+
+}
+.header_logo-link {
+
+}
+.header_logo-pic {
+
 }
