@@ -22,6 +22,7 @@ body {
 }
 
 /*header styles start*/
+
 .header {
     background-color: #ffffff;
     position: fixed;
@@ -70,3 +71,12 @@ body {
 .header__link:hover, .header__link:focus, .header__link:active {
     opacity: .75;
 }
+
+/*header styles end*/
+
+/*Intro styles start*/
+
+.intro {
+
+}
+
