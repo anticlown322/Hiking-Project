@@ -37,16 +37,6 @@ body {
     justify-content: space-between;
 }
 
-.header__logo {
-
-}
-.header__logo-link {
-
-}
-.header__logo-pic {
-
-}
-
 .header__list {
     display: flex;
     flex-wrap: wrap;
@@ -68,7 +58,7 @@ body {
 }
 
 .header__link:hover, .header__link:focus, .header__link:active {
-    opacity: .75;
+    opacity: .50;
 }
 
 /*header styles end*/
@@ -76,7 +66,8 @@ body {
 /*Intro styles start*/
 
 .intro {
-    height: 100vh;
+    height: 6709px;
+    width: 1440px;
     background: url(../img/jpg/background.jpg) no-repeat center;
     background-size: cover;
 }
