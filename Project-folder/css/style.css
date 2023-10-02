@@ -77,6 +77,8 @@ body {
 /*Intro styles start*/
 
 .intro {
-
+    height: 100vh;
+    background: url(../img/jpg/background.jpg) no-repeat center;
+    background-size: cover;
 }
 
