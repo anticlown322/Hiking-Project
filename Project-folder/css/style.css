@@ -84,9 +84,17 @@ body {
 
     /*tours styles start*/
 
+.tours__title {
+    text-transform: uppercase;
+}
+
     /*tours styles end*/
 
     /*store styles start*/
+
+.store__title {
+    text-transform: uppercase;
+}
 
     /*store styles end*/
 
