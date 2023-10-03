@@ -93,7 +93,8 @@ body {
     /*tours styles start*/
 
 .tours_wrapper {
-    max-width: 1440px;
+    max-width: 50vw;
+    height: 500px;
     margin: 0 auto;
 }
 
@@ -106,10 +107,15 @@ body {
 }
 
 .tours__cards{
-    height: 50vh;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 40% 40%;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
 }
 
 .tours__card {
+    color: black;
     box-shadow: 0px 2px 20px rgba(21,24,36, 0.16);
 }
 
