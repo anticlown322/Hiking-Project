@@ -76,6 +76,10 @@ body {
 
     /*intro styles start*/
 
+.intro__title {
+    text-transform: uppercase;
+}
+
     /*intro styles end*/
 
     /*tours styles start*/
