@@ -76,23 +76,31 @@ body {
 
     /*intro styles start*/
 
-.intro__title {
+.intro__subtitle {
     text-transform: uppercase;
+}
+
+.intro__subtitle_alt_font {
+
 }
 
     /*intro styles end*/
 
     /*tours styles start*/
 
-.tours__title {
+.tours__subtitle {
     text-transform: uppercase;
+}
+
+.tours__subtitle_alt_font {
+
 }
 
     /*tours styles end*/
 
     /*store styles start*/
 
-.store__title {
+.store__subtitle {
     text-transform: uppercase;
 }
 
