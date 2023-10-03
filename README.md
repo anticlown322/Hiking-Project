@@ -6,10 +6,18 @@
 - :label: Группа: **251004**
 - :spiral_calendar: Дедлайн: 20.10.2023
 - :family_man_man_boy: Авторы: [Карась А.С.](https://github.com/anticlown322), [Иванов А.А.](https://github.com/AndreyItMe), [Рычихин С.А.](https://github.com/BeerManNotAvailable1)
-- :card_index_dividers: [Исходники](assets/files/Вариант%206.psd):
+- :card_index_dividers: Исходники: [файл](assets/files/Вариант%206.psd), [посмотреть]()
 ## Практическая часть: 
 - :file_folder: Папка с [проектом](Project-folder)
 - :clapper: Публикация на [Github Pages]()
+Список для оценивания:
+- []
+- []
+- []
+- []
 # Заключение
-(Выполненные пункты работы написать)
-*С уважением, команда проекта*
+(Что-то о рабском труде)
+
+*С уважением, облысевшая команда проекта*
+
+## Фото исходников
