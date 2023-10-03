@@ -1,4 +1,4 @@
-/*общее*/
+/*general styles start*/
 html {
     box-sizing: border-box;
 }
@@ -15,30 +15,123 @@ body {
     font-weight: normal;
     color: #000000;
 }
+/*general styles end*/
 
+
+/*header styles start*/
 .wrapper {
     width: 1440px;
     margin: 0 auto;
 }
 
-/*классы header*/
 .header {
-    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .header__wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+    justify-content: space-between;
 }
 
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.header_logo {
+.header__item {
+    margin-right: 80px;
+}
+
+.header__item:last-child {
+    margin-right: 0;
+}
+
+.header__link {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.header__link:hover, .header__link:focus, .header__link:active {
+    opacity: .50;
+}
+/*header styles end*/
+
+
+/*main styles start*/
+.background {
+    min-height: 100vh;
+    width: 1440px;
+    background: url(../img/jpg/background.jpg) no-repeat center;
+    background-size: cover;
+}
+
+    /*intro styles start*/
+
+.intro__subtitle {
+    text-transform: uppercase;
+}
+
+.intro__subtitle_alt_font {
 
 }
-.header_logo-link {
+
+    /*intro styles end*/
+
+.intro__about_info {
+    width: 100vw;
+    height: 30vh;
+    background-color: #fff;
+}
+
+    /*tours styles start*/
+
+.tours_wrapper {
+    max-width: 50vw;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.tours__subtitle {
+    text-transform: uppercase;
+}
+
+.tours__subtitle_alt_font {
 
 }
-.header_logo-pic {
 
+.tours__cards{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 40% 40%;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
 }
+
+.tours__card {
+    color: black;
+    box-shadow: 0px 2px 20px rgba(21,24,36, 0.16);
+}
+
+    /*tours styles end*/
+
+    /*store styles start*/
+
+.store__subtitle {
+    text-transform: uppercase;
+}
+
+    /*store styles end*/
+
+/*main styles end*/
+
+
+/*footer styles start*/
+
+/*footer styles end*/
