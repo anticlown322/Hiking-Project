@@ -36,8 +36,9 @@ body {
 
 .header-background {
     height: 620px;
-    width: 1440px;
-    background: url(../img/jpg/bg-sitting-woman.jpg) no-repeat center;
+    max-width: 1440px;
+    width: 100vw;
+    background: url(../img/png/bg-sitting-woman.png) no-repeat center;
     background-size: cover;
 }
 
