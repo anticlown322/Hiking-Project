@@ -48,26 +48,21 @@ body {
 }
 
 .header-wrapper {
+    padding: 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
 }
 
-.header-logo {
-    padding: 20px;
-}
-
-.header-nav {
-
-}
-
 .header-list {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    font-weight: bold;
 }
 
 .header-item {
-    margin-right: 18px;
+    margin: 10px;
 }
 
 .header-item:last-child {
@@ -90,15 +85,18 @@ body {
 /*main styles start*/
 .background {
     min-height: 100vh;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100vw;
     background: url(../img/jpg/background.jpg) no-repeat center;
     background-size: cover;
 }
 
     /*intro styles start*/
 
-.intro-subtitle {
+.intro-subtitle, .store-subtitle, .tours-subtitle {
     text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
 }
 
 .intro-subtitle_alt_font {
@@ -108,11 +106,17 @@ body {
     /*intro styles end*/
 
 .intro-about-info {
-    width: 100vw;
+    width: 100%;
     height: 30vh;
     background-color: #fff;
+    text-align: center;
+    padding: 50px;
 }
 
+.intro-about-info-title {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
     /*tours styles start*/
 
 .tours-section {
@@ -123,10 +127,6 @@ body {
     max-width: 880px;
     margin: 0 auto;
     padding: 0 15px;
-}
-
-.tours-subtitle {
-    text-transform: uppercase;
 }
 
 .tours-subtitle-second-font {
@@ -190,8 +190,9 @@ body {
 
     /*store styles start*/
 
-.store-subtitle {
-    text-transform: uppercase;
+.store-pic {
+    display: flex;
+    padding: 50px;
 }
 
     /*store styles end*/
