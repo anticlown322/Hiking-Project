@@ -7,6 +7,15 @@ html {
     box-sizing: inherit;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -19,46 +28,56 @@ body {
 
 
 /*header styles start*/
-.wrapper {
-    width: 1440px;
-    margin: 0 auto;
-}
-
 .header {
-    position: fixed;
     top: 0;
-    left: 0;
+    z-index: 100;
     width: 100%;
 }
 
-.header__wrapper {
+.header-background {
+    height: 620px;
+    max-width: 1440px;
+    width: 100vw;
+    background: url(../img/png/bg-sitting-woman.png) no-repeat center;
+    background-size: cover;
+}
+
+.wrapper {
+    max-width: 1440px;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    padding: 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    justify-content: space-between;
 }
 
-.header__list {
+.header-list {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    font-weight: bold;
 }
 
-.header__item {
-    margin-right: 80px;
+.header-item {
+    margin: 10px;
 }
 
-.header__item:last-child {
+.header-item:last-child {
     margin-right: 0;
 }
 
-.header__link {
+.header-link {
     font-size: 18px;
     line-height: 24px;
     color: #000000;
     text-decoration: none;
 }
 
-.header__link:hover, .header__link:focus, .header__link:active {
+.header-link:hover, .header-link:focus, .header-link:active {
     opacity: .50;
 }
 /*header styles end*/
@@ -67,64 +86,119 @@ body {
 /*main styles start*/
 .background {
     min-height: 100vh;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100vw;
     background: url(../img/jpg/background.jpg) no-repeat center;
     background-size: cover;
 }
 
     /*intro styles start*/
 
-.intro__subtitle {
+.intro-subtitle, .store-subtitle, .tours-subtitle {
     text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
 }
 
-.intro__subtitle_alt_font {
+.intro-subtitle_alt_font {
 
+}
+
+.intro-video-preview {
+    border: 20px solid white;
+    margin: 30px;
 }
 
     /*intro styles end*/
 
-.intro__about_info {
-    width: 100vw;
+.intro-about-info {
+    width: 100%;
     height: 30vh;
     background-color: #fff;
+    text-align: center;
+    padding: 50px;
 }
 
+.intro-about-info-title {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
     /*tours styles start*/
 
-.tours_wrapper {
-    max-width: 50vw;
-    height: 500px;
+.tours-section {
+    padding: 30px 0;
+}
+
+.tours-wrapper {
+    max-width: 880px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
-.tours__subtitle {
-    text-transform: uppercase;
-}
-
-.tours__subtitle_alt_font {
+.tours-subtitle-second-font {
 
 }
 
-.tours__cards{
+.tours-cards{
     display: grid;
-    grid-template-columns: 30% 30%;
-    grid-template-rows: 40% 40%;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 200px;
+    row-gap: 50px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
-.tours__card {
-    color: black;
-    box-shadow: 0px 2px 20px rgba(21,24,36, 0.16);
+.tours-card {
+    box-shadow: 0 2px 20px rgba(21,24,36, 0.5);
+    background-color: #ffffff;
 }
 
+.tours-card-content::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 315px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tours-card-lake-in-the-mountains::before {
+    background-image: url("../img/jpg/lake-in-the-mountains.jpg");
+}
+
+.tours-card-lake-in-the-forest::before {
+    background-image: url("../img/jpg/lake-in-the-forest.jpg");
+}
+
+.tours-card-snowy-mountains::before {
+    background-image: url("../img/jpg/snowy-mountains.jpg");
+}
+
+.tours-card-group-hiking::before {
+    background-image: url("../img/jpg/group-hiking.jpg");
+}
+
+.tours-card-content-wrap {
+    text-align: center;
+}
+
+.tours-card-title {
+    padding: 30px;
+    font-weight: bold;
+}
+
+.tours-card-description {
+    padding-bottom: 20px;
+}
     /*tours styles end*/
 
     /*store styles start*/
 
-.store__subtitle {
-    text-transform: uppercase;
+.store-pic {
+    display: flex;
+    padding: 50px;
 }
 
     /*store styles end*/
