@@ -103,6 +103,11 @@ body {
 
 }
 
+.intro-video-preview {
+    border: 20px solid white;
+    margin: 30px;
+}
+
     /*intro styles end*/
 
 .intro-about-info {
@@ -144,7 +149,7 @@ body {
 }
 
 .tours-card {
-    box-shadow: 0 2px 20px rgba(21,24,36, 0.3);
+    box-shadow: 0 2px 20px rgba(21,24,36, 0.5);
     background-color: #ffffff;
 }
 
