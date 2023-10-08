@@ -24,6 +24,13 @@ body {
     font-weight: normal;
     color: #000000;
 }
+
+.intro-subtitle, .store-subtitle, .tours-subtitle {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
 /*general styles end*/
 
 
@@ -93,12 +100,6 @@ body {
 }
 
     /*intro styles start*/
-
-.intro-subtitle, .store-subtitle, .tours-subtitle {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-}
 
 .intro-subtitle_alt_font {
 
@@ -196,9 +197,41 @@ body {
 
     /*store styles start*/
 
-.store-pic {
-    display: flex;
-    padding: 50px;
+.store-wrapper{
+    max-width: 1440px;
+    width: 100vw;
+    height: 600px;
+}
+
+.store-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 100px;
+    padding: 10px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.store-card {
+    max-width: 600px;
+}
+
+.store-card-content {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 315px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.store-card-promotion-in-the-tent {
+    background-image: url("../img/jpg/promotion-in-the-tent.jpg");
+}
+
+.store-card-starter-package {
+    background-image: url("../img/jpg/starter-package.jpg");
 }
 
     /*store styles end*/
