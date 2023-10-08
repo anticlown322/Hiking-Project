@@ -32,7 +32,6 @@ body {
 }
 
 .wrapper {
-    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
 }
@@ -42,17 +41,27 @@ body {
 
 /*header styles start*/
 .header {
+    max-width: 1440px;
+    width: 100%;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 100;
 }
 
+.header_active {
+    background-color: #ce849a;
+    opacity: 80%;
+}
+
 .header-wrapper {
-    padding: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+    transition: 0.2s linear;
 }
 
 .header-list {
