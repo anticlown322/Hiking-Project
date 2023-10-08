@@ -25,7 +25,7 @@ body {
     color: #000000;
 }
 
-.intro-subtitle, .store-subtitle, .tours-subtitle {
+.intro-subtitle, .store-subtitle, .tours-subtitle, .footer-subtitle {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
@@ -307,5 +307,11 @@ body {
 
 
 /*footer styles start*/
+
+.footer {
+    max-width: 1440px;
+    height: 600px;
+    background-color: white;
+}
 
 /*footer styles end*/
