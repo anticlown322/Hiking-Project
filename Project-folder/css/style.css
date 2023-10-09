@@ -24,35 +24,44 @@ body {
     font-weight: normal;
     color: #000000;
 }
+
+.intro-subtitle, .store-subtitle, .tours-subtitle, .footer-subtitle {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
 /*general styles end*/
 
 
 /*header styles start*/
 .header {
+    max-width: 1440px;
+    width: 100%;
+    position: fixed;
+    left: 0;
     top: 0;
     z-index: 100;
-    width: 100%;
 }
 
-.header-background {
-    height: 620px;
-    max-width: 1440px;
-    width: 100vw;
-    background: url(../img/png/bg-sitting-woman.png) no-repeat center;
-    background-size: cover;
-}
-
-.wrapper {
-    max-width: 1440px;
-    width: 100vw;
-    margin: 0 auto;
+.header_active {
+    background-color: #ce849a;
+    opacity: 80%;
 }
 
 .header-wrapper {
-    padding: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+    transition: 0.2s linear;
 }
 
 .header-list {
@@ -80,10 +89,12 @@ body {
 .header-link:hover, .header-link:focus, .header-link:active {
     opacity: .50;
 }
+
 /*header styles end*/
 
 
 /*main styles start*/
+
 .background {
     min-height: 100vh;
     max-width: 1440px;
@@ -92,24 +103,39 @@ body {
     background-size: cover;
 }
 
-    /*intro styles start*/
+/*intro section styles start*/
 
-.intro-subtitle, .store-subtitle, .tours-subtitle {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
+.intro-background {
+    height: 620px;
+    max-width: 1440px;
+    width: 100vw;
+    background: url(../img/png/bg-sitting-woman.png) no-repeat center;
+    background-size: cover;
 }
 
 .intro-subtitle_alt_font {
 
 }
 
-.intro-video-preview {
-    border: 20px solid white;
-    margin: 30px;
+.videos {
+    max-width: 1440px;
+    height: 600px;
 }
 
-    /*intro styles end*/
+.video-wrapper {
+
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    border: 20px solid white;
+}
+
+.video-element {
+    width: 100%;
+    height: 100%;
+}
+
+/*intro section styles end*/
 
 .intro-about-info {
     width: 100%;
@@ -123,7 +149,8 @@ body {
     text-transform: uppercase;
     font-weight: bolder;
 }
-    /*tours styles start*/
+
+/*tours section styles start*/
 
 .tours-section {
     padding: 30px 0;
@@ -139,7 +166,7 @@ body {
 
 }
 
-.tours-cards{
+.tours-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 200px;
@@ -150,7 +177,7 @@ body {
 }
 
 .tours-card {
-    box-shadow: 0 2px 20px rgba(21,24,36, 0.5);
+    box-shadow: 0 2px 20px rgba(21, 24, 36, 0.5);
     background-color: #ffffff;
 }
 
@@ -192,20 +219,100 @@ body {
 .tours-card-description {
     padding-bottom: 20px;
 }
-    /*tours styles end*/
 
-    /*store styles start*/
+/*tours section styles end*/
 
-.store-pic {
-    display: flex;
-    padding: 50px;
+/*store section styles start*/
+
+.store-cards {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 50px;
 }
 
-    /*store styles end*/
+.store-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.store-card:hover .store-card-pic {
+    transform: scale(1.05);
+}
+
+.store-card-pic {
+    object-fit: cover;
+    width: 100%;
+    transition: 0.15s all;
+}
+
+.store-card-title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 50px;
+    position: absolute;
+}
+
+.store-card-price {
+
+}
+
+.store-card-promotion-in-the-tent {
+    width: 719px;
+    height: 495px;
+}
+
+.store-card-starter-package {
+    width: 719px;
+    height: 424px;
+}
+
+.store-card-title-promotion {
+    color: black;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+.store-card-price-promotion {
+    color: black;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+.store-card-title-package {
+    color: white;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+
+.store-cards-price-package {
+    color: white;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+
+.store-card-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*store section styles end*/
 
 /*main styles end*/
 
 
 /*footer styles start*/
+
+.footer {
+    max-width: 1440px;
+    height: 600px;
+    background-color: white;
+}
 
 /*footer styles end*/
