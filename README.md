@@ -4,9 +4,8 @@
 - :label: Номер лабораторной: **№1**
 - :label: Вариант: **6**
 - :label: Группа: **251004**
-- :family_man_man_boy: Авторы: [Рычихин С.А.](https://github.com/BeerManNotAvailable1), [Иванов А.А.](https://github.com/AndreyItMe),  [Карась А.С.](https://github.com/anticlown322), 
+- :family_man_man_boy: Авторы: [Рычихин С.А.](https://github.com/BeerManNotAvailable1), [Иванов А.А.](https://github.com/AndreyItMe),  [Карась А.С.](https://github.com/anticlown322), вот они слева направо:
 
-    вот они слева направо:
     ![Первое фото команды](/assets/images/team-photo-1.jpg)
     ![Второе фото команды](/assets/images/team-photo-2.jpg)
     ![Третье фото команды](/assets/images/team-photo-3.jpg)
@@ -34,6 +33,7 @@
 - [x] Иконки выполнены с помощью библиотеки Font Awesome
 - [ ] \(Дополнительно) Нажатие на иконки отсылает на регистрационные страницы соответствующих соц.сетей
 # Заключение
+(Что-то о рабском труде)
 Мы не товарищи сидельцы, но небо в клеточку и друзья в полосочку нам знакомы...
 
 *С уважением, облысевшая команда проекта*
@@ -41,5 +41,4 @@
 ## Фото исходников
 ![Скриншот макета - Секция "Intro"](/assets/images/task-screen-1.jpg)
 ![Скриншот макета - Секция "Tours"](/assets/images/task-screen-2.jpg)
-
 ![Скриншот макета - Секция "Store"](/assets/images/task-screen-3.jpg)
