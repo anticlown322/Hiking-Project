@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/icon-font.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -36,7 +37,7 @@
                             <a href="#!" class="header-link">Home</a>
                         </li>
                         <li class="header-item">
-                            <a href="#!" class="header-link">About Us</a>
+                            <a href="#!" class="header-link">About us</a>
                         </li>
                         <li class="header-item">
                             <a href="#!" class="header-link">Tours</a>
@@ -60,8 +61,19 @@
         <!--intro section start-->
         <section class="intro">
             <div class="intro-background">
-                <div class="intro-number-navigation"></div>
+                <div class="intro-swiper">
+                    <div class="intro-swiper-wrapper">
+                        <div class="swiper-slide">1</div>
+                        <div class="swiper-slide">2</div>
+                        <div class="swiper-slide">3</div>
+                        <div class="swiper-slide">4</div>
+                        <div class="swiper-slide">5</div>
+                        <div class="swiper-button-prev" onclick="changeSlide(-1)">-</div>
+                        <div class="swiper-button-next" onclick="changeSlide(1)">+</div>
+                    </div>
+                </div>
             </div>
+
             <div class="wrapper">
                 <h2 class="intro-subtitle">
                     The mountains are <span class="intro-subtitle_alt_font">waiting for you</span>
@@ -69,26 +81,27 @@
 
                 <div class="videos">
                     <div class="video-wrapper">
-                        <iframe class="video-element"
-                                src="https://www.youtube.com/embed/nyvehUgBc3g?si=chS4SdQ5jYXIUSDm"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
+                        <img src="img/jpg/video-preview.jpg" alt="Video Preview" class="video-element" width="" height="">
+<!--                        <iframe class="video-element"-->
+<!--                                src="https://www.youtube.com/embed/nyvehUgBc3g?si=chS4SdQ5jYXIUSDm"-->
+<!--                                title="YouTube video player" frameborder="0"-->
+<!--                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
+<!--                                allowfullscreen></iframe>-->
                     </div>
                 </div>
 
-                <p>
+                <p class="video-description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.Duis vitae tortor nec arcu condimentum
                     ullamcorper quis eget felis.
                     In posuere elit eget lacus lacinia rutrum eu at leo.
                 </p>
 
                 <div class="intro-about-info">
-                    <h2 class="intro-about-info-title">
-                        About us</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Duis vitae tortor nec arcu condimentum ullamcorper quis eget felis.
+                    <h2 class="intro-about-info-title">About us</h2>
+                    <p class="intro-about-info-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Duis vitae tortor nec arcu condimentum
+                        ullamcorper quis eget felis.
+                        In posuere elit eget lacus lacinia rutrum eu at leo.
                     </p>
                 </div>
             </div>
@@ -211,20 +224,22 @@
                 ullamcorper quis eget felis.
                 In posuere elit eget lacus lacinia rutrum eu at leo.
             </p>
-            <ul class="footer-icons">
-                <li>
-                    <a href="" class="fa-brands fa-facebook"></a>
-                </li>
-                <li>
-                    <a href="" class="fa-brands fa-instagram"></a>
-                </li>
-                <li>
-                    <a href="" class="fa-brands fa-viber"></a>
-                </li>
-                <li>
-                    <a href="" class="fa-brands fa-telegram"></a>
-                </li>
-            </ul>
+            <div class="footer-icons-wrapper">
+                <ul class="footer-icons">
+                    <li>
+                        <a href="" class="fa-brands fa-facebook fa-2xl"></a>
+                    </li>
+                    <li>
+                        <a href="" class="fa-brands fa-instagram fa-2xl"></a>
+                    </li>
+                    <li>
+                        <a href="" class="fa-brands fa-viber fa-2xl"></a>
+                    </li>
+                    <li>
+                        <a href="" class="fa-brands fa-telegram fa-2xl"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
     <!--footer end-->

@@ -17,7 +17,7 @@ img {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Soleto', sans-serif;
     font-style: normal;
     font-size: 16px;
     line-height: 1.2;
@@ -50,29 +50,34 @@ body {
 }
 
 .header_active {
-    background-color: #ce849a;
-    opacity: 80%;
+    background-color: rgb(255, 255, 255);
+    opacity: 90%;
 }
 
 .header-wrapper {
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-bottom: 10px;
+    padding-top: 86px;
+    padding-left: 78px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
-    transition: 0.2s linear;
+    align-items: center;
+    transition: 0.1s linear;
+    border-color: black;
+}
+
+.header-logo {
+    margin-right: 80px;
 }
 
 .header-list {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
-    font-weight: bold;
 }
 
 .header-item {
     margin: 10px;
+    font-size: 22px;
+    line-height: 24px;
+
 }
 
 .header-item:last-child {
@@ -80,8 +85,6 @@ body {
 }
 
 .header-link {
-    font-size: 18px;
-    line-height: 24px;
     color: #000000;
     text-decoration: none;
 }
@@ -113,6 +116,13 @@ body {
     background-size: cover;
 }
 
+.intro-subtitle {
+    padding: 100px;
+    font-size: 70px;
+    font-family: 'TitlingGothicFB Cond Bold', sans-serif;
+    font-weight: bolder;
+}
+
 .intro-subtitle_alt_font {
 
 }
@@ -123,9 +133,8 @@ body {
 }
 
 .video-wrapper {
-
     width: 700px;
-    height: 500px;
+    height: 382px;
     margin: 0 auto;
     border: 20px solid white;
 }
@@ -135,21 +144,51 @@ body {
     height: 100%;
 }
 
+.video-description {
+    font-size: 25px;
+    line-height: 30px;
+}
 /*intro section styles end*/
+
+.intro-swiper-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+}
+
+.swiper-button-prev {
+
+}
+
+.swiper-button-next {
+
+}
 
 .intro-about-info {
     width: 100%;
     height: 30vh;
     background-color: #fff;
     text-align: center;
-    padding: 50px;
+    padding: 80px;
 }
 
 .intro-about-info-title {
     text-transform: uppercase;
     font-weight: bolder;
+    font-size: 65px;
+    padding: 30px;
 }
 
+.intro-about-info-content {
+    font-size: 30px;
+}
 /*tours section styles start*/
 
 .tours-section {
@@ -313,6 +352,19 @@ body {
     max-width: 1440px;
     height: 600px;
     background-color: white;
+}
+
+.footer-icons-wrapper {
+    width: 400px;
+    height: 50px;
+    margin: 20px auto;
+}
+
+.footer-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    list-style-type: none;
 }
 
 /*footer styles end*/
