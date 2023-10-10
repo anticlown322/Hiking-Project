@@ -50,8 +50,8 @@ body {
 }
 
 .header_active {
-    background-color: #ce849a;
-    opacity: 80%;
+    background-color: rgb(255, 255, 255);
+    opacity: 90%;
 }
 
 .header-wrapper {
@@ -60,7 +60,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    transition: 0.2s linear;
+    transition: 0.1s linear;
+    border-color: black;
 }
 
 .header-logo {
@@ -148,6 +149,27 @@ body {
     line-height: 30px;
 }
 /*intro section styles end*/
+
+.intro-swiper-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+}
+
+.swiper-button-prev {
+
+}
+
+.swiper-button-next {
+
+}
 
 .intro-about-info {
     width: 100%;
