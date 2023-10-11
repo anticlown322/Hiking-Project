@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="css/icon-font.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -61,15 +61,17 @@
         <!--intro section start-->
         <section class="intro">
             <div class="intro-background">
-                <div class="intro-swiper">
-                    <div class="intro-swiper-wrapper">
-                        <div class="swiper-slide">1</div>
-                        <div class="swiper-slide">2</div>
-                        <div class="swiper-slide">3</div>
-                        <div class="swiper-slide">4</div>
-                        <div class="swiper-slide">5</div>
-                        <div class="swiper-button-prev" onclick="changeSlide(-1)">-</div>
-                        <div class="swiper-button-next" onclick="changeSlide(1)">+</div>
+                <div class="intro-swiper-wrapper">
+                    <div class="intro-swiper-container">
+                        <div class="intro-swiper-track">
+                            <div class="swiper-item">1</div>
+                            <div class="swiper-item">2</div>
+                            <div class="swiper-item">3</div>
+                            <div class="swiper-item">4</div>
+                            <div class="swiper-item">5</div>
+                        </div>
+                        <div class="swiper-button-prev">&#10094</div>
+                        <div class="swiper-button-next" >&#10095</div>
                     </div>
                 </div>
             </div>
@@ -81,7 +83,8 @@
 
                 <div class="videos">
                     <div class="video-wrapper">
-                        <img src="img/jpg/video-preview.jpg" alt="Video Preview" class="video-element" width="" height="">
+                        <img src="img/jpg/video-preview.jpg" alt="Video Preview" class="video-element" width=""
+                             height="">
 <!--                        <iframe class="video-element"-->
 <!--                                src="https://www.youtube.com/embed/nyvehUgBc3g?si=chS4SdQ5jYXIUSDm"-->
 <!--                                title="YouTube video player" frameborder="0"-->
@@ -243,7 +246,8 @@
         </div>
     </footer>
     <!--footer end-->
-    <script src="./js/main.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/intro-swiper.js"></script>
 </div>
 
 </body>
