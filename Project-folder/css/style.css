@@ -111,6 +111,7 @@ body {
 .intro-background {
     height: 620px;
     max-width: 1440px;
+    padding: 300px;
     width: 100vw;
     background: url(../img/png/bg-sitting-woman.png) no-repeat center;
     background-size: cover;
@@ -128,6 +129,7 @@ body {
 
 .intro-swiper-track {
     display: flex;
+    text-align: center;
     background-color: yellow;
     transition: 0.15s;
 }
