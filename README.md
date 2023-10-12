@@ -41,7 +41,6 @@
 
 *С уважением, облысевшая команда проекта*
 
-
 ## Фото исходников
 ![Скриншот макета - Секция "Intro"](/assets/images/task-screen-1.jpg)
 ![Скриншот макета - Секция "Tours"](/assets/images/task-screen-2.jpg)
