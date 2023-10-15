@@ -6383,7 +6383,8 @@ readers do not read off random characters that represent icons */
 
 .fab,
 .fa-brands {
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 .fa-monero:before {
   content: "\f3d0"; }
