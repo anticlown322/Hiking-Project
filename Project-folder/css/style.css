@@ -1,4 +1,19 @@
 /*general styles start*/
+@font-face {
+    font-family: 'TitlingGothicFB Cond Bold';
+    src: url("../webfonts/TitlingGothicFB Cond Bold.otf");
+}
+
+@font-face {
+    font-family: 'Verveine Regular';
+    src: url("../webfonts/VerveineRegular.TTF");
+}
+
+@font-face {
+    font-family: 'Verveine';
+    src: url("../webfonts/Verveine.ttf")
+}
+
 html {
     box-sizing: border-box;
 }
@@ -328,7 +343,7 @@ body {
 }
 
 .tours-card-title {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
     margin-top: 50px;
     margin-bottom: 55px;
@@ -336,6 +351,8 @@ body {
 
 .tours-card-description {
     font-size: 24px;
+    padding-bottom: 75px;
+    text-align: center;
 }
 
     /*tours section styles end*/
