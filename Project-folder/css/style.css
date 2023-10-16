@@ -267,20 +267,26 @@ body {
 }
 
 .tours-wrapper {
-    max-width: 880px;
+    max-width: 1180px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-.tours-subtitle-second-font {
+.tours-subtitle-second-font, .tours-subtitle {
+    font-size: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 
+.tours-paragraph {
+    font-size: 30px;
 }
 
 .tours-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 200px;
-    row-gap: 50px;
+    row-gap: 75px;
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -322,33 +328,35 @@ body {
 }
 
 .tours-card-title {
-    padding: 30px;
+    font-size: 24px;
     font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 55px;
 }
 
 .tours-card-description {
-    padding-bottom: 20px;
+    font-size: 24px;
 }
 
     /*tours section styles end*/
 
     /*store section styles start*/
 
-.store-wrapper {
+.store-container {
     max-width: 1440px;
-    max-height: 1300px;
     display: flex;
 }
 
 .store-nav-container {
     width: 15%;
     background-color: white;
+    display: block;
 }
 
 .store-swiper-button-prev, .store-swiper-button-next {
     text-align: center;
     font-size: 50px;
-    color: #59131f;
+    color: black;
 }
 
 .store-swiper-button-prev {
