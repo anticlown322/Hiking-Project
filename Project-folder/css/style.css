@@ -28,6 +28,11 @@
     src: url("../webfonts/MYRIADPRO-SEMIBOLD.OTF");
 }
 
+@font-face{
+    src: url("../webfonts/PFSquareSansPro-Bold.ttf");
+    font-family: PF-Square-Sans-Pro-Bold-font;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -103,8 +108,11 @@ body {
 }
 
 .header-item {
+
     margin: 10px;
-    font-size: 22px;
+    font-size: 23px;
+    font-family: "PF-Square-Sans-Pro-Bold-font";
+    font-weight: bold;
     line-height: 24px;
 
 }
