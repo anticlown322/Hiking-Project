@@ -14,6 +14,20 @@
     src: url("../webfonts/Verveine.ttf")
 }
 
+@font-face{
+    font-family: 'Myriadpro-bold';
+    src: url("../webfonts/MYRIADPRO-BOLD.OTF");
+}
+
+@font-face{
+    font-family: 'Myriadpro-regular';
+    src: url("../webfonts/MYRIADPRO-REGULAR.OTF");
+}
+@font-face{
+    font-family: 'Myriadpro-semibold';
+    src: url("../webfonts/MYRIADPRO-SEMIBOLD.OTF");
+}
+
 html {
     box-sizing: border-box;
 }
@@ -126,10 +140,10 @@ body {
 .intro-background {
     height: 665px;
     max-width: 1440px;
-    padding: 300px;
     width: 100vw;
     background: url(../img/png/bg-sitting-woman.png) no-repeat center;
     background-size: cover;
+    margin-bottom: 97px;
 }
 
 .intro-swiper-wrapper {
@@ -166,14 +180,17 @@ body {
 }
 
 .intro-subtitle {
-    padding: 100px;
-    font-size: 70px;
-    font-family: 'TitlingGothicFB Cond Bold', sans-serif;
-    font-weight: bolder;
+    font-size: 64px;
+    font-family: 'TitlingGothicFB Cond Bold', serif;
 }
 
 .intro-subtitle_alt_font {
-
+    margin-left: 20px;
+    color: #4e171b;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 84px;
+    font-family: "Verveine", serif;
 }
 
 
@@ -343,14 +360,19 @@ body {
 }
 
 .tours-card-title {
-    font-size: 26px;
+    text-align: center;
+    word-spacing: 1px;
+    font-family: Myriadpro-bold;
+    font-size: 28px;
     font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 55px;
+    margin-top: 48px;
+    margin-bottom: 45px;
 }
 
 .tours-card-description {
-    font-size: 24px;
+    margin: 0 auto;
+    font-family: Myriadpro-regular;
+    font-size: 23px;
     padding-bottom: 75px;
     text-align: center;
 }
