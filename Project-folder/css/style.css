@@ -214,10 +214,10 @@ body {
 }
 
 .video-wrapper {
-    width: 700px;
+    width: 760px;
     height: 400px;
-    margin: 0 auto;
-    border: 20px solid white;
+    margin: 6.2% 8.75%;
+    border: 30px solid white;
 }
 
 .video-description {
