@@ -653,8 +653,8 @@ body {
     list-style-type: none;
 }
 
-.footer-icon-item {
-
+.footer-icon-item:hover {
+    opacity: 50%;
 }
 
 /*footer styles end*/

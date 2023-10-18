@@ -35,7 +35,6 @@ introItems.forEach((item) => {
 introBtnNext.addEventListener('click', () => {
     const itemsLeft = introItemsCount - (Math.abs(introSwiperPosition) + introSlidesToShow * introItemWidth) / introItemWidth;
     introSwiperPosition -= itemsLeft >= introSlidesToScroll ? introMovePosition : itemsLeft * introItemWidth;
-
     setIntroPosition();
     checkIntroBtns();
 })
@@ -43,7 +42,6 @@ introBtnNext.addEventListener('click', () => {
 introBtnPrev.addEventListener('click', () => {
     const itemsLeft = Math.abs(introSwiperPosition) / introItemWidth;
     introSwiperPosition += itemsLeft >= introSlidesToScroll ? introMovePosition : itemsLeft * introItemWidth;
-
     setIntroPosition();
     checkIntroBtns();
 })
@@ -120,17 +118,3 @@ const checkStoreBtns = () => {
 checkStoreBtns();
 
 /*store-swiper script end*/
-
-/*footer script start*/
-function setIconAnim(iconItem) {
-    if (iconItem.type === "mouseover")
-        iconItem.target.classList.add('fa-fade');
-    else if (iconItem.type === "mouseout")
-        iconItem.target.classList.remove('fa-fade');
-}
-
-let footerIcon = document.getElementById("footer-icon-item");
-footerIcon.addEventListener("mouseover", setIconAnim);
-footerIcon.addEventListener("mouseout", setIconAnim);
-
-/*footer script end*/
