@@ -34,6 +34,16 @@
     font-family: PF-Square-Sans-Pro-Bold-font;
 }
 
+@font-face {
+    src:url("../webfonts/Soleto-Bold.ttf");
+    font-family: "Soleto bold";
+}
+
+@font-face {
+    src:url("../webfonts/Soleto-Regular.ttf");
+    font-family: "Soleto regular";
+}
+
 html {
     box-sizing: border-box;
 }
@@ -52,7 +62,7 @@ img {
 }
 
 body {
-    font-family: 'Soleto', sans-serif;
+    font-family: 'Soleto regular', sans-serif;
     font-style: normal;
     font-size: 16px;
     line-height: 1.2;
@@ -61,6 +71,7 @@ body {
 }
 
 .intro-subtitle, .store-subtitle, .tours-subtitle, .footer-subtitle {
+    font-family: 'TitlingGothicFB Cond Bold', sans-serif;
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
@@ -103,19 +114,23 @@ body {
     margin-right: 80px;
 }
 
+.header-nav ul li{
+    list-style-type: none;
+    float: left;
+    margin: 0 8px;
+}
+
 .header-list {
     display: flex;
     flex-wrap: wrap;
 }
 
 .header-item {
-
     margin: 10px;
     font-size: 23px;
-    font-family: "PF-Square-Sans-Pro-Bold-font";
+    font-family: "Soleto bold";
     font-weight: bold;
     line-height: 24px;
-
 }
 
 .header-item:last-child {
@@ -196,7 +211,6 @@ body {
 
 .intro-subtitle {
     font-size: 64px;
-    font-family: 'TitlingGothicFB Cond Bold', serif;
 }
 
 .intro-subtitle_alt_font {
@@ -222,11 +236,13 @@ body {
 .video-wrapper {
     width: 760px;
     height: 400px;
-    margin: 6.2% 8.75%;
+    margin: 6.2% 8.75% 10%;
     border: 30px solid white;
 }
 
 .video-description {
+    margin-left: 80px;
+    font-family: "Soleto regular";
     font-size: 25px;
     line-height: 30px;
 }
@@ -237,9 +253,12 @@ body {
 }
 
 .videos-navigation-container-title {
+    word-spacing: 2px;
     text-align: center;
-    font-size: 27px;
+    font-size: 26px;
     margin: 50px 30px;
+    font-family: "Soleto bold";
+    color: #4e171b;
 }
 
 .video-swiper-wrapper {
@@ -320,7 +339,7 @@ body {
 .intro-about-info-title {
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 65px;
+    font-size: 64px;
     padding: 30px;
 }
 
@@ -343,9 +362,18 @@ body {
 }
 
 .tours-subtitle-second-font, .tours-subtitle {
-    font-size: 60px;
+    font-size: 64px;
     margin-top: 60px;
     margin-bottom: 60px;
+}
+
+.tours-subtitle-second-font{
+    margin-left: 50px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 84px;
+    font-family: "Verveine Regular";
+    color: #1e5a7c;
 }
 
 .tours-paragraph {
