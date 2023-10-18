@@ -3,13 +3,11 @@
     const headerWrapper = document.querySelector('.header-wrapper');
     window.onscroll = () => {
         if (window.pageYOffset > 50) {
-            headerWrapper.classList.add('header_active');
+            headerWrapper.classList.add('header-active');
             headerWrapper.style.paddingTop = "20px";
             headerWrapper.style.paddingBottom = "20px";
-        }
-        else
-        {
-            headerWrapper.classList.remove('header_active');
+        } else {
+            headerWrapper.classList.remove('header-active');
             headerWrapper.style.paddingTop = "86px";
             headerWrapper.style.paddingBottom = "0";
         }
@@ -122,3 +120,17 @@ const checkStoreBtns = () => {
 checkStoreBtns();
 
 /*store-swiper script end*/
+
+/*footer script start*/
+function setIconAnim(iconItem) {
+    if (iconItem.type === "mouseover")
+        iconItem.target.classList.add('fa-fade');
+    else if (iconItem.type === "mouseout")
+        iconItem.target.classList.remove('fa-fade');
+}
+
+let footerIcon = document.getElementById("footer-icon-item");
+footerIcon.addEventListener("mouseover", setIconAnim);
+footerIcon.addEventListener("mouseout", setIconAnim);
+
+/*footer script end*/

@@ -84,7 +84,7 @@ body {
     z-index: 100;
 }
 
-.header_active {
+.header-active {
     background-color: rgb(255, 255, 255);
     opacity: 90%;
 }
@@ -109,13 +109,11 @@ body {
 }
 
 .header-item {
-
     margin: 10px;
     font-size: 23px;
     font-family: "PF-Square-Sans-Pro-Bold-font";
     font-weight: bold;
     line-height: 24px;
-
 }
 
 .header-item:last-child {
@@ -602,11 +600,19 @@ body {
     margin: 20px auto;
 }
 
+.footer-paragraph {
+    text-align: center;
+}
+
 .footer-icons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
     list-style-type: none;
+}
+
+.footer-icon-item {
+
 }
 
 /*footer styles end*/
