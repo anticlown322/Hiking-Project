@@ -10,9 +10,8 @@
     <title>Hiking | Exploring the world!</title>
 
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="./css/icon-font.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -86,8 +85,7 @@
                 <div class="videos">
                     <div class="videos-container">
                         <div class="video-wrapper">
-                            <img src="img/jpg/video-preview.jpg" alt="Video Preview" class="video-element" width=""
-                                 height="">
+                            <img src="img/jpg/video-preview.jpg" alt="Video Preview" class="video-element">
                             <!--                        встройка видео из ютуба-->
                             <!--                        <iframe class="video-element"-->
                             <!--                                src="https://www.youtube.com/embed/nyvehUgBc3g?si=chS4SdQ5jYXIUSDm"-->
@@ -98,7 +96,7 @@
                         <p class="video-description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.Duis vitae tortor nec arcu
                             condimentum
-                            ullamcorper quis eget felis.
+                            ullamcorper quis eget felis.<br>
                             In posuere elit eget lacus lacinia rutrum eu at leo.
                         </p>
                     </div>
@@ -108,7 +106,7 @@
                             <button class="video-swiper-button-prev fa-solid fa-angle-left"></button>
                             <div class="video-swiper-container">
                                 <div class="video-swiper-track">
-                                    <div class="video-swiper-active-item"></div>
+                                    <div class="video-swiper-item video-swiper-active-item"></div>
                                     <div class="video-swiper-item"></div>
                                     <div class="video-swiper-item"></div>
                                     <div class="video-swiper-item"></div>
@@ -209,15 +207,14 @@
                 <div class="store-container">
                     <div class="store-swiper-wrapper">
                         <div class="store-swiper-container">
-                            <button class="store-swiper-button-prev fa-solid fa-angle-up"></button>
+                            <button class="store-swiper-button-prev fa-solid fa-angle-up" onclick=""></button>
                             <div class="store-swiper-track">
-                                <div class="store-swiper-active-item">
-                                </div>
+                                <div class="store-swiper-item store-swiper-active-item"></div>
                                 <div class="store-swiper-item"></div>
                                 <div class="store-swiper-item"></div>
                                 <div class="store-swiper-item"></div>
                             </div>
-                            <button class="store-swiper-button-next fa-solid fa-angle-down"></button>
+                            <button class="store-swiper-button-next fa-solid fa-angle-down" onclick=""></button>
                         </div>
                     </div>
 
@@ -235,7 +232,6 @@
                                 <figcaption class="store-card-price store-card-price-promotion">
                                     56$
                                 </figcaption>
-                                <a href="#!" class="store-card-link"></a>
                             </figure>
 
                             <figure class="store-card store-card-starter-package ">
@@ -246,7 +242,6 @@
                                 <figcaption class="store-card-price store-cards-price-package">
                                     29$
                                 </figcaption>
-                                <a href="#!" class="store-card-link"></a>
                             </figure>
                         </div>
                     </div>
@@ -261,37 +256,35 @@
     <footer class="footer">
         <div class="wrapper">
             <h2 class="footer-subtitle">About us</h2>
-            <p>
-                <center>
+            <p class="footer-paragraph">
                     <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae
                     <br>tortor nec arcu condimentum ullamcorper quis eget felis.
                     <br>In posuere elit eget lacus lacinia rutrum eu at leo.
-                </center>
             </p>
             <div class="footer-icons-wrapper">
                 <ul class="footer-icons">
                     <li>
                         <span class="fa-stack fa-2x">
                           <a class="fa fa-circle fa-stack-2x"></a>
-                          <a class="fa fa-facebook fa-stack-1x fa-inverse"></a>
+                          <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook fa-stack-1x fa-inverse footer-icon-item"></a>
                         </span>
                     </li>
                     <li>
                         <span class="fa-stack fa-2x">
                           <a class="fa fa-circle fa-stack-2x"></a>
-                          <a class="fa fa-instagram fa-stack-1x  fa-inverse"></a>
+                          <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram fa-stack-1x fa-inverse footer-icon-item"></a>
                         </span>
                     </li>
                     <li>
                         <span class="fa-stack fa-2x">
                           <a class="fa fa-circle fa-stack-2x"></a>
-                          <a class="fa fa-whatsapp fa-stack-1x fa-inverse"></a>
+                          <a href="https://www.whatsapp.com/?lang=ru_RU" target="_blank" class="fa fa-whatsapp fa-stack-1x fa-inverse footer-icon-item"></a>
                         </span>
                     </li>
                     <li>
                         <span class="fa-stack fa-2x">
                           <a class="fa fa-circle fa-stack-2x"></a>
-                          <a class="fa fa-tumblr fa-stack-1x fa-inverse"></a>
+                          <a href="https://www.tumblr.com/" target="_blank" class="fa fa-tumblr fa-stack-1x fa-inverse footer-icon-item"></a>
                         </span>
                     </li>
                 </ul>
@@ -300,7 +293,6 @@
     </footer>
     <!--footer end-->
     <script src="js/scripts.js"></script>
-    <script src=""></script>
 </div>
 
 </body>
