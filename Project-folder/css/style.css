@@ -14,21 +14,22 @@
     src: url("../webfonts/Verveine.ttf")
 }
 
-@font-face{
+@font-face {
     font-family: 'Myriadpro-bold';
     src: url("../webfonts/MYRIADPRO-BOLD.OTF");
 }
 
-@font-face{
+@font-face {
     font-family: 'Myriadpro-regular';
     src: url("../webfonts/MYRIADPRO-REGULAR.OTF");
 }
-@font-face{
+
+@font-face {
     font-family: 'Myriadpro-semibold';
     src: url("../webfonts/MYRIADPRO-SEMIBOLD.OTF");
 }
 
-@font-face{
+@font-face {
     src: url("../webfonts/PFSquareSansPro-Bold.ttf");
     font-family: PF-Square-Sans-Pro-Bold-font;
 }
@@ -143,7 +144,7 @@ body {
     background-size: cover;
 }
 
-    /*intro section styles start*/
+/*intro section styles start*/
 
 .intro-background {
     height: 665px;
@@ -154,9 +155,18 @@ body {
     margin-bottom: 97px;
 }
 
+.intro-half-container {
+    max-width: 720px;
+    max-height: 712px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .intro-swiper-wrapper {
-    width: 300px;
-    margin: 0 auto;
+    max-width: 324px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -168,20 +178,17 @@ body {
 }
 
 .intro-swiper-container {
-    height: 100%;
-    width: 240px;
     overflow: hidden;
 }
 
 .intro-swiper-track {
-    height: 100%;
     display: flex;
     text-align: center;
     transition: 0.15s;
 }
 
 .intro-swiper-item {
-    min-width: 80px;
+    min-width: 100px;
     height: 50px;
     font-size: 33px;
     font-weight: bold;
@@ -200,7 +207,6 @@ body {
     font-size: 84px;
     font-family: "Verveine", serif;
 }
-
 
 
 .videos {
@@ -237,47 +243,71 @@ body {
 }
 
 .video-swiper-wrapper {
-    width: 220px;
+    max-width: 220px;
+    width: 100%;
     margin: auto;
     display: flex;
-    align-items: flex-start;
 }
 
 .video-swiper-container {
     height: 100%;
-    width: 160px;
+    max-width: 160px;
+    width: 100%;
+    margin: auto;
     justify-content: space-between;
 }
 
 .video-swiper-track {
     height: 100%;
-    display: flex;
-    justify-content: space-between;
     transition: 0.15s;
+    display: flex;
 }
 
 .video-swiper-button-prev, .video-swiper-button-next {
-    text-align: center;
     font-size: 50px;
-    color: black;
 }
 
 .video-swiper-button-prev {
     margin-right: 15px;
+    color: #4e171b;
 }
 
 .video-swiper-button-next {
     margin-left: 13px;
+    color: #4e171b;
 }
 
 .video-swiper-item {
-    height: 21px;
-    width: 21px;
-    background-color: #59131f;
+    height: 22px;
+    width: 22px;
+    background-color: #4e171b;
     border-radius: 50%;
+    margin-right: 14px;
 }
 
+.video-swiper-item:last-child {
+    margin-right: 0;
+}
 
+.video-swiper-active-item {
+    border-radius: 50%;
+    background-color: #4e171b;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    margin-right: 14px;
+}
+
+.video-swiper-active-item:before {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    background: white;
+    width: 12px;
+    height: 12px;
+    align-self: center;
+}
 
 .intro-about-info {
     width: 100%;
@@ -298,9 +328,9 @@ body {
     font-size: 30px;
 }
 
-    /*intro section styles end*/
+/*intro section styles end*/
 
-    /*tours section styles start*/
+/*tours section styles start*/
 
 .tours-section {
     padding: 30px 0;
@@ -385,9 +415,9 @@ body {
     text-align: center;
 }
 
-    /*tours section styles end*/
+/*tours section styles end*/
 
-    /*store section styles start*/
+/*store section styles start*/
 
 .store-container {
     max-width: 1440px;
@@ -395,10 +425,13 @@ body {
     justify-content: space-between;
 }
 
-.store-nav-container {
-    width: 15%;
+.store-swiper-wrapper {
+    max-width: 175px;
+    width: 100%;
     background-color: white;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .store-swiper-button-prev, .store-swiper-button-next {
@@ -408,18 +441,53 @@ body {
 }
 
 .store-swiper-button-prev {
-    margin-bottom: 15px;
+    margin-bottom: 1px;
 }
 
 .store-swiper-button-next {
-    margin-top: 13px;
+
+}
+
+.store-swiper-container {
+    max-height: 210px;
+    height: 100%;
+}
+
+.store-swiper-track {
+    display: grid;
+    place-items: center;
 }
 
 .store-swiper-item {
-    height: 21px;
-    width: 21px;
+    height: 22px;
+    width: 22px;
     background-color: black;
     border-radius: 50%;
+    margin-bottom: 14px;
+}
+
+.store-swiper-active-item {
+    border-radius: 50%;
+    background-color: black;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.store-swiper-active-item:before {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    background: white;
+    width: 12px;
+    height: 12px;
+    align-self: center;
+}
+
+.store-swiper-item:last-child {
+    margin-bottom: 5px;
 }
 
 .store-subtitle-container {
@@ -527,7 +595,7 @@ body {
     height: 100%;
 }
 
-    /*store section styles end*/
+/*store section styles end*/
 
 /*main styles end*/
 

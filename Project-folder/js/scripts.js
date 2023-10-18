@@ -18,47 +18,63 @@
 /*header script end*/
 
 /*intro-swiper script start*/
-let swiperPosition = 0;
-const slidesToShow = 3;
-const slidesToScroll = 1;
-const container = document.querySelector('.intro-swiper-container');
-const track = document.querySelector('.intro-swiper-track');
-const items = document.querySelectorAll('.intro-swiper-item');
-const btnPrev = document.querySelector('.intro-swiper-button-prev');
-const btnNext = document.querySelector('.intro-swiper-button-next');
-const itemsCount = items.length;
-const itemWidth = container.clientWidth / slidesToShow;
-const movePosition = slidesToScroll * itemWidth;
+let introSwiperPosition = 0;
+const introSlidesToShow = 3;
+const introSlidesToScroll = 1;
+const introContainer = document.querySelector('.intro-swiper-container');
+const introTrack = document.querySelector('.intro-swiper-track');
+const introItems = document.querySelectorAll('.intro-swiper-item');
+const introBtnPrev = document.querySelector('.intro-swiper-button-prev');
+const introBtnNext = document.querySelector('.intro-swiper-button-next');
+const introItemsCount = introItems.length;
+const introItemWidth = introContainer.clientWidth / introSlidesToShow;
+const introMovePosition = introSlidesToScroll * introItemWidth;
 
-items.forEach((item) => {
+introItems.forEach((item) => {
     item.style.minWidth = `$(itemWidth)px`;
 });
 
-btnNext.addEventListener('click', () => {
-    const itemsLeft = itemsCount - (Math.abs(swiperPosition) + slidesToShow * itemWidth) / itemWidth;
-    swiperPosition -= itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
+introBtnNext.addEventListener('click', () => {
+    const itemsLeft = introItemsCount - (Math.abs(introSwiperPosition) + introSlidesToShow * introItemWidth) / introItemWidth;
+    introSwiperPosition -= itemsLeft >= introSlidesToScroll ? introMovePosition : itemsLeft * introItemWidth;
 
     setPosition();
     checkBtns();
 })
 
-btnPrev.addEventListener('click', () => {
-    const itemsLeft = Math.abs(swiperPosition) / itemWidth;
-    swiperPosition += itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
+introBtnPrev.addEventListener('click', () => {
+    const itemsLeft = Math.abs(introSwiperPosition) / introItemWidth;
+    introSwiperPosition += itemsLeft >= introSlidesToScroll ? introMovePosition : itemsLeft * introItemWidth;
 
     setPosition();
     checkBtns();
 })
 
 const setPosition = () => {
-    track.style.transform = `translateX(${swiperPosition}px)`;
+    introTrack.style.transform = `translateX(${introSwiperPosition}px)`;
 }
 
 const checkBtns = () => {
-    btnPrev.disabled = swiperPosition === 0;
-    btnNext.disabled = swiperPosition <= -(itemsCount - slidesToShow) * itemWidth;
+    introBtnPrev.disabled = introSwiperPosition === 0;
+    introBtnNext.disabled = introSwiperPosition <= -(introItemsCount - introSlidesToShow) * introItemWidth;
 }
 
 checkBtns();
 
 /*intro-swiper script end*/
+
+/*video-swiper script start*/
+
+const videoBtnPrev = document.querySelector('.video-swiper-button-prev');
+const videoBtnNext = document.querySelector('.video-swiper-button-next');
+let videoCurrentSlide = 1;
+const videoItems = document.querySelectorAll('.video-swiper-item');
+
+
+/*video-swiper script end*/
+
+/*store-swiper script start*/
+
+
+
+/*store-swiper script end*/
