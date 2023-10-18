@@ -392,6 +392,7 @@ body {
 .store-container {
     max-width: 1440px;
     display: flex;
+    justify-content: space-between;
 }
 
 .store-nav-container {
@@ -424,7 +425,7 @@ body {
 .store-subtitle-container {
     width: 25%;
     height: 100%;
-    text-align: center;
+    text-align: start;
 }
 
 .store-subtitle {
@@ -434,18 +435,29 @@ body {
 }
 
 .store-cards-container {
-    width: 60%;
+    width: 719px;
+    display: flex;
+    flex-direction: column;
+    align-content: end;
 }
 
 .store-cards {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 170px;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-right: 108px;
+    row-gap: 150px;
 }
 
 .store-card {
-    position: relative;
-    overflow: hidden;
+    width: 719px;
+    /*margin-right: 800px;*/
+    /*right: 2px;*/
+    align-self: end;
+    justify-self: end;
+    /*position: relative;*/
+    /*overflow: hidden;*/
 }
 
 .store-card:hover .store-card-pic {
