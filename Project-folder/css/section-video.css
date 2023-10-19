@@ -1,4 +1,5 @@
 .videos {
+    margin-top: 3.8%;
     max-width: 1440px;
     max-height: 600px;
     display: flex;
@@ -10,26 +11,31 @@
 }
 
 .videos .container .wrapper {
+
     max-width: 760px;
     border: 30px solid white;
 }
 
+
+
 .videos .container .description {
-    margin-left: 80px;
+    max-width: 760px;
+    margin: 0 auto;
     font-family: "Soleto regular";
     font-size: 25px;
     line-height: 30px;
+    vertical-align: center;
 }
 
-.videos .container .nav-container {
+.videos .nav-container {
     max-width: 533px;
+    width: 100%;
 }
 
 .videos-navigation-container-title {
     word-spacing: 2px;
     text-align: center;
     font-size: 26px;
-    margin: 50px 30px;
     font-family: "Soleto bold";
     color: #4e171b;
 }
