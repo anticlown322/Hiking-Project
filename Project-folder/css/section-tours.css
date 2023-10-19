@@ -70,10 +70,9 @@
 
 .tours-card-wrapper .title {
     text-align: center;
-    word-spacing: 1px;
-    font-family: Myriadpro-bold;
+    word-spacing: 2px;
+    font-family: "Myriadpro-bold", sans-serif;
     font-size: 28px;
-    font-weight: bold;
     margin-top: 48px;
     margin-bottom: 45px;
 }
