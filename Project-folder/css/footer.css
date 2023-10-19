@@ -1,15 +1,23 @@
 .footer {
     background-color: white;
+    padding-top: 65px;
 }
 
-.footer-icons-wrapper {
-    max-width: 300px;
-    max-height: 50px;
-    margin: 20px auto;
+.footer-subtitle {
+    font-family: 'TitlingGothicFB Cond Bold', sans-serif;
+    font-size: 64px;
+    margin-top: 66px;
+    margin-bottom: 58px;
 }
 
 .footer .wrapper .paragraph {
     text-align: center;
+    font-size: 30px;
+}
+
+.footer-icons-wrapper {
+    max-width: 318px;
+    margin: calc(10% - 4px) auto;
 }
 
 .footer-icons-wrapper .icons {
