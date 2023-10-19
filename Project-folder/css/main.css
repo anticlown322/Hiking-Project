@@ -1,0 +1,6 @@
+.background {
+    max-width: 1440px;
+    width: 100vw;
+    background: url(../img/jpg/background.jpg) no-repeat center;
+    background-size: cover;
+}
