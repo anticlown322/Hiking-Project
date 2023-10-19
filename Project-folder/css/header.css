@@ -33,11 +33,20 @@
 }
 
 .header-nav .list .item {
-    margin: 10px;
+    margin: 8px;
     font-size: 23px;
     font-family: "Soleto bold";
     font-weight: bold;
     line-height: 24px;
+}
+
+.header-nav{
+    padding-bottom: 0.19%;
+    margin-left: 6.45%;
+}
+
+.header-nav .list .item:first-child{
+    margin-left: 0;
 }
 
 .header-nav .list .item:last-child {

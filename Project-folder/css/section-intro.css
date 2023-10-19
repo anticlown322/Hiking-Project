@@ -3,11 +3,16 @@
     width: 100%;
     background: url(../img/png/bg-sitting-woman.png) no-repeat center;
     background-size: cover;
-    margin-bottom: 50px;
 }
 
 .intro-half-container {
-    width: 50%;
+    width: 60.5%;
+    height: 108.5%;
+    position: relative;
+}
+
+.intro-background{
+    margin-bottom: 6.66%;
 }
 
 .intro-half-container .wrapper {
@@ -15,6 +20,12 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    position: absolute;
+    top:calc(50% - 25px);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .intro-half-container .wrapper .swiper-button-prev, .intro-half-container .wrapper .swiper-button-next {
@@ -47,6 +58,7 @@
 }
 
 .intro-subtitle {
+
     font-size: 64px;
 }
 
