@@ -1,0 +1,75 @@
+.intro-background {
+    height: 665px;
+    width: 100%;
+    background: url(../img/png/bg-sitting-woman.png) no-repeat center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.intro-half-container {
+    width: 50%;
+}
+
+.intro-half-container .wrapper {
+    max-width: 324px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.intro-half-container .wrapper .swiper-button-prev, .intro-half-container .wrapper .swiper-button-next {
+    text-align: center;
+    font-size: 40px;
+}
+
+.intro-swiper-container {
+    overflow: hidden;
+}
+
+.intro-swiper-container .swiper-track {
+    display: flex;
+    text-align: center;
+    transition: 0.15s;
+}
+
+.intro-swiper-container .swiper-track .swiper-item {
+    min-width: 100px;
+    height: 50px;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.intro-swiper-active-item {
+    min-width: 100px;
+    height: 50px;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.intro-subtitle {
+    font-size: 64px;
+}
+
+.intro-subtitle-alt-font {
+    margin-left: 20px;
+    color: #4e171b;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 84px;
+    font-family: "Verveine", serif;
+}
+
+.intro-about-info {
+    background-color: #fff;
+    text-align: center;
+}
+
+.intro-about-info .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.intro-about-info .content {
+    font-size: 30px;
+}
