@@ -1,6 +1,6 @@
 /*header script start*/
 (function () {
-    const headerWrapper = document.querySelector('.header-wrapper');
+    const headerWrapper = document.querySelector('.header .wrapper ');
     window.onscroll = () => {
         if (window.pageYOffset > 50) {
             headerWrapper.classList.add('header-active');
@@ -20,10 +20,10 @@ let introSwiperPosition = 0;
 const introSlidesToShow = 3;
 const introSlidesToScroll = 1;
 const introContainer = document.querySelector('.intro-swiper-container');
-const introTrack = document.querySelector('.intro-swiper-track');
-const introItems = document.querySelectorAll('.intro-swiper-item');
-const introBtnPrev = document.querySelector('.intro-swiper-button-prev');
-const introBtnNext = document.querySelector('.intro-swiper-button-next');
+const introTrack = document.querySelector('.intro-swiper-container .swiper-track');
+const introItems = document.querySelectorAll('.intro-swiper-container .swiper-track .swiper-item');
+const introBtnPrev = document.querySelector('.intro-half-container .wrapper .swiper-button-prev');
+const introBtnNext = document.querySelector('.intro-half-container .wrapper .swiper-button-next');
 const introItemsCount = introItems.length;
 const introItemWidth = introContainer.clientWidth / introSlidesToShow;
 const introMovePosition = introSlidesToScroll * introItemWidth;
@@ -61,10 +61,10 @@ checkIntroBtns();
 
 /*video-swiper script start*/
 
-const videoBtnPrev = document.querySelector('.video-swiper-button-prev');
-const videoBtnNext = document.querySelector('.video-swiper-button-next');
+const videoBtnPrev = document.querySelector('.video-swiper-wrapper .swiper-button-prev');
+const videoBtnNext = document.querySelector('.video-swiper-wrapper .swiper-button-next');
 let videoCurrentSlide = 0;
-const videoItems = document.querySelectorAll('.video-swiper-item');
+const videoItems = document.querySelectorAll('.video-swiper-wrapper .container .swiper-track .swiper-item');
 
 videoBtnNext.addEventListener('click', () => {
     videoItems[videoCurrentSlide].classList.remove('video-swiper-active-item');
@@ -81,8 +81,10 @@ videoBtnPrev.addEventListener('click', () => {
 })
 
 const checkVideoBtns = () => {
-    videoBtnPrev.disabled = videoCurrentSlide < 1;
-    videoBtnNext.disabled = videoCurrentSlide > 2;
+    const MIN_POS = 1;
+    const MAX_POS = 2;
+    videoBtnPrev.disabled = videoCurrentSlide < MIN_POS;
+    videoBtnNext.disabled = videoCurrentSlide > MAX_POS;
 }
 
 checkVideoBtns();
@@ -91,10 +93,10 @@ checkVideoBtns();
 
 /*store-swiper script start*/
 
-const storeBtnPrev = document.querySelector('.store-swiper-button-prev');
-const storeBtnNext = document.querySelector('.store-swiper-button-next');
+const storeBtnPrev = document.querySelector('.store-swiper-wrapper .swiper-button-prev');
+const storeBtnNext = document.querySelector('.store-swiper-wrapper .swiper-button-next');
 let storeCurrentSlide = 0;
-const storeItems = document.querySelectorAll('.store-swiper-item');
+const storeItems = document.querySelectorAll('.store-swiper-wrapper .swiper-track .swiper-item');
 
 storeBtnNext.addEventListener('click', () => {
     storeItems[storeCurrentSlide].classList.remove('store-swiper-active-item');
@@ -111,8 +113,10 @@ storeBtnPrev.addEventListener('click', () => {
 })
 
 const checkStoreBtns = () => {
-    storeBtnPrev.disabled = storeCurrentSlide < 1;
-    storeBtnNext.disabled = storeCurrentSlide > 2;
+    const MIN_POS = 1;
+    const MAX_POS = 2;
+    storeBtnPrev.disabled = storeCurrentSlide < MIN_POS;
+    storeBtnNext.disabled = storeCurrentSlide > MAX_POS;
 }
 
 checkStoreBtns();
