@@ -35,12 +35,12 @@
 }
 
 @font-face {
-    src:url("../webfonts/Soleto-Bold.ttf");
+    src: url("../webfonts/Soleto-Bold.ttf");
     font-family: "Soleto bold";
 }
 
 @font-face {
-    src:url("../webfonts/Soleto-Regular.ttf");
+    src: url("../webfonts/Soleto-Regular.ttf");
     font-family: "Soleto regular";
 }
 
@@ -70,12 +70,17 @@ body {
     color: #000000;
 }
 
-.intro-subtitle, .store-subtitle, .tours-subtitle, .footer-subtitle {
+.intro-subtitle, .subtitle, .tours-subtitle, .footer-subtitle {
     font-family: 'TitlingGothicFB Cond Bold', sans-serif;
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
 }
+
+.header-link:hover, .header-link:focus, .header-link:active, .footer-icons-wrapper .icons .item:hover {
+    opacity: .50;
+}
+
 
 .wrapper {
     width: 100%;
@@ -100,7 +105,7 @@ body {
     opacity: 90%;
 }
 
-.header-wrapper {
+.header .wrapper {
     padding-top: 86px;
     padding-left: 78px;
     display: flex;
@@ -114,18 +119,18 @@ body {
     margin-right: 80px;
 }
 
-.header-nav ul li{
+.header-nav ul li {
     list-style-type: none;
     float: left;
     margin: 0 8px;
 }
 
-.header-list {
+.header-nav .list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.header-item {
+.header-nav .list .item {
     margin: 10px;
     font-size: 23px;
     font-family: "Soleto bold";
@@ -133,17 +138,8 @@ body {
     line-height: 24px;
 }
 
-.header-item:last-child {
+.item:last-child {
     margin-right: 0;
-}
-
-.header-link {
-    color: #000000;
-    text-decoration: none;
-}
-
-.header-link:hover, .header-link:focus, .header-link:active {
-    opacity: .50;
 }
 
 /*header styles end*/
@@ -180,14 +176,14 @@ body {
     justify-content: center;
 }
 
-.intro-swiper-wrapper {
+.intro-half-container .wrapper {
     max-width: 324px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-.intro-swiper-button-prev, .intro-swiper-button-next {
+.intro-half-container .wrapper .swiper-button-prev, .intro-half-container .wrapper .swiper-button-next {
     text-align: center;
     font-size: 40px;
 }
@@ -196,13 +192,13 @@ body {
     overflow: hidden;
 }
 
-.intro-swiper-track {
+.intro-swiper-container .swiper-track {
     display: flex;
     text-align: center;
     transition: 0.15s;
 }
 
-.intro-swiper-item {
+.intro-swiper-container .swiper-track .swiper-item {
     min-width: 100px;
     height: 50px;
     font-size: 33px;
@@ -213,7 +209,7 @@ body {
     font-size: 64px;
 }
 
-.intro-subtitle_alt_font {
+.intro-subtitle-alt-font {
     margin-left: 20px;
     color: #4e171b;
     font-style: italic;
@@ -229,27 +225,29 @@ body {
     display: flex;
 }
 
-.videos-container {
-    width: 58%;
+.videos .container {
+    max-width: 907px;
+    width: 100%;
 }
 
-.video-wrapper {
+.videos .container .wrapper {
     width: 760px;
     height: 400px;
     margin: 6.2% 8.75% 10%;
     border: 30px solid white;
 }
 
-.video-description {
+.videos .container .description {
     margin-left: 80px;
     font-family: "Soleto regular";
     font-size: 25px;
     line-height: 30px;
 }
 
-.videos-navigation-container {
-    width: 42%;
-    height: 60%;
+.videos .container .nav-container {
+    max-width: 533px;
+    width: 100%;
+    height: 100%;
 }
 
 .videos-navigation-container-title {
@@ -262,13 +260,14 @@ body {
 }
 
 .video-swiper-wrapper {
+    align-self: center;
     max-width: 220px;
     width: 100%;
     margin: auto;
     display: flex;
 }
 
-.video-swiper-container {
+.video-swiper-wrapper .container {
     height: 100%;
     max-width: 160px;
     width: 100%;
@@ -276,27 +275,27 @@ body {
     justify-content: space-between;
 }
 
-.video-swiper-track {
+.video-swiper-wrapper .container .swiper-track {
     height: 100%;
     transition: 0.15s;
     display: flex;
 }
 
-.video-swiper-button-prev, .video-swiper-button-next {
+.video-swiper-wrapper .swiper-button-prev, .video-swiper-wrapper .swiper-button-next {
     font-size: 50px;
 }
 
-.video-swiper-button-prev {
+.video-swiper-wrapper .swiper-button-prev {
     margin-right: 15px;
     color: #4e171b;
 }
 
-.video-swiper-button-next {
+.video-swiper-wrapper .swiper-button-next {
     margin-left: 13px;
     color: #4e171b;
 }
 
-.video-swiper-item {
+.video-swiper-wrapper .container .swiper-track .swiper-item {
     height: 22px;
     width: 22px;
     background-color: #4e171b;
@@ -304,7 +303,7 @@ body {
     margin-right: 14px;
 }
 
-.video-swiper-item:last-child {
+.video-swiper-wrapper .container .swiper-track .swiper-item:last-child {
     margin-right: 0;
 }
 
@@ -336,14 +335,14 @@ body {
     padding: 80px;
 }
 
-.intro-about-info-title {
+.intro-about-info .title {
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 64px;
     padding: 30px;
 }
 
-.intro-about-info-content {
+.intro-about-info .content {
     font-size: 30px;
 }
 
@@ -356,13 +355,13 @@ body {
     margin: 0 auto;
 }
 
-.tours-subtitle-second-font, .tours-subtitle {
+.tours-subtitle-alt-font, .tours-subtitle {
     font-size: 64px;
     margin-top: 60px;
     margin-bottom: 60px;
 }
 
-.tours-subtitle-second-font{
+.tours-subtitle-alt-font {
     margin-left: 50px;
     font-style: italic;
     font-weight: bold;
@@ -371,11 +370,11 @@ body {
     color: #1e5a7c;
 }
 
-.tours-paragraph {
+.tours-wrapper .paragraph {
     font-size: 30px;
 }
 
-.tours-cards-container {
+.tours-wrapper .cards-container {
     width: 100%;
     height: 100%;
 }
@@ -390,12 +389,12 @@ body {
     list-style-type: none;
 }
 
-.tours-card {
+.tours-cards .card {
     box-shadow: 0 2px 20px rgba(21, 24, 36, 0.5);
     background-color: #ffffff;
 }
 
-.tours-card-content::before {
+.tours-cards .content::before {
     height: 315px;
     width: 100%;
     content: "";
@@ -421,12 +420,12 @@ body {
     background-image: url("../img/jpg/group-hiking.jpg");
 }
 
-.tours-card-content-wrap {
+.tours-card-wrapper {
     height: 266px;
     text-align: center;
 }
 
-.tours-card-title {
+.tours-card-wrapper .title {
     text-align: center;
     word-spacing: 1px;
     font-family: Myriadpro-bold;
@@ -436,7 +435,7 @@ body {
     margin-bottom: 45px;
 }
 
-.tours-card-description {
+.tours-card-wrapper .description {
     margin: 0 auto;
     font-family: Myriadpro-regular;
     font-size: 23px;
@@ -453,7 +452,7 @@ body {
     justify-content: space-between;
 }
 
-.store-swiper-wrapper {
+.store-container .wrapper {
     max-width: 175px;
     width: 100%;
     background-color: white;
@@ -462,31 +461,27 @@ body {
     justify-content: center;
 }
 
-.store-swiper-button-prev, .store-swiper-button-next {
+.store-swiper-wrapper {
+    max-height: 210px;
+    height: 100%;
+}
+
+.store-swiper-wrapper .swiper-button-prev, .store-swiper-wrapper .swiper-button-next {
     text-align: center;
     font-size: 50px;
     color: black;
 }
 
-.store-swiper-button-prev {
+.store-swiper-wrapper .swiper-button-prev {
     margin-bottom: 1px;
 }
 
-.store-swiper-button-next {
-
-}
-
-.store-swiper-container {
-    max-height: 210px;
-    height: 100%;
-}
-
-.store-swiper-track {
+.store-swiper-wrapper .swiper-track {
     display: grid;
     place-items: center;
 }
 
-.store-swiper-item {
+.store-swiper-wrapper .swiper-track .swiper-item {
     height: 22px;
     width: 22px;
     background-color: black;
@@ -514,7 +509,7 @@ body {
     align-self: center;
 }
 
-.store-swiper-item:last-child {
+.store-swiper-wrapper .swiper-track .swiper-item:last-child {
     margin-bottom: 5px;
 }
 
@@ -524,13 +519,14 @@ body {
     text-align: start;
 }
 
-.store-subtitle {
+.store-subtitle-container .subtitle {
     font-size: 200px;
     font-weight: bold;
-    rotate: -90deg;
+    writing-mode: vertical-lr;
+    rotate: -180deg;
 }
 
-.store-cards-container {
+.store-container .cards-container {
     width: 719px;
     display: flex;
     flex-direction: column;
@@ -546,17 +542,13 @@ body {
     row-gap: 150px;
 }
 
-.store-card {
+.store-cards .card {
     width: 719px;
-    /*margin-right: 800px;*/
-    /*right: 2px;*/
     align-self: end;
     justify-self: end;
-    /*position: relative;*/
-    /*overflow: hidden;*/
 }
 
-.store-card:hover .store-card-pic {
+.store-cards .card:hover .store-card-pic {
     transform: scale(1.05);
 }
 
@@ -566,15 +558,11 @@ body {
     transition: 0.15s all;
 }
 
-.store-card-title {
+.store-cards .title {
     font-size: 16px;
     font-weight: bold;
     line-height: 50px;
     position: absolute;
-}
-
-.store-card-price {
-
 }
 
 .store-card-promotion-in-the-tent {
@@ -587,40 +575,11 @@ body {
     height: 424px;
 }
 
-.store-card-title-promotion {
+.store-card-title-promotion, .store-card-price-promotion {
     color: black;
     position: absolute;
     right: 25px;
     top: 25px;
-}
-
-.store-card-price-promotion {
-    color: black;
-    position: absolute;
-    right: 25px;
-    top: 25px;
-}
-
-.store-card-title-package {
-    color: white;
-    position: absolute;
-    right: 25px;
-    bottom: 25px;
-}
-
-.store-cards-price-package {
-    color: white;
-    position: absolute;
-    right: 25px;
-    bottom: 25px;
-}
-
-.store-card-link {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
 }
 
 /*store section styles end*/
@@ -642,19 +601,15 @@ body {
     margin: 20px auto;
 }
 
-.footer-paragraph {
+.footer .wrapper .paragraph {
     text-align: center;
 }
 
-.footer-icons {
+.footer-icons-wrapper .icons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
     list-style-type: none;
-}
-
-.footer-icon-item:hover {
-    opacity: 50%;
 }
 
 /*footer styles end*/
