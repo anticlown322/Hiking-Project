@@ -77,16 +77,35 @@ body {
     font-weight: bold;
 }
 
-.header-link:hover, .header-link:focus, .header-link:active, .footer-icons-wrapper .icons .item:hover {
+.header-link:hover, .header-link:focus, .header-link:active, .footer-icons-wrapper .icons .item:hover, .footer-icons-wrapper .icons .item:focus, .footer-icons-wrapper .icons .item:active {
     opacity: .50;
 }
-
 
 .wrapper {
     width: 100%;
     margin: 0 auto;
 }
 
+.store-swiper-active-item:before, .video-swiper-active-item:before {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    background: white;
+    width: 12px;
+    height: 12px;
+    align-self: center;
+}
+
+.store-swiper-active-item, .video-swiper-active-item {
+    display: flex;
+    justify-content: center;
+}
+
+.store-swiper-wrapper .swiper-track .swiper-item, .store-swiper-active-item, .video-swiper-wrapper .container .swiper-track .swiper-item, .video-swiper-active-item {
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+}
 /*general styles end*/
 
 
@@ -112,11 +131,6 @@ body {
     flex-wrap: wrap;
     align-items: center;
     transition: 0.1s linear;
-    border-color: black;
-}
-
-.header-logo {
-    margin-right: 80px;
 }
 
 .header-nav ul li {
@@ -138,7 +152,7 @@ body {
     line-height: 24px;
 }
 
-.item:last-child {
+.header-nav .list .item:last-child {
     margin-right: 0;
 }
 
@@ -148,32 +162,23 @@ body {
 /*main styles start*/
 
 .background {
-    min-height: 100vh;
     max-width: 1440px;
     width: 100vw;
     background: url(../img/jpg/background.jpg) no-repeat center;
     background-size: cover;
 }
 
-/*intro section styles start*/
+/*     intro section styles start     */
 
 .intro-background {
     height: 665px;
-    max-width: 1440px;
-    width: 100vw;
+    width: 100%;
     background: url(../img/png/bg-sitting-woman.png) no-repeat center;
     background-size: cover;
-    margin-bottom: 97px;
 }
 
 .intro-half-container {
-    max-width: 720px;
-    max-height: 712px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 50%;
 }
 
 .intro-half-container .wrapper {
@@ -218,10 +223,9 @@ body {
     font-family: "Verveine", serif;
 }
 
-
 .videos {
     max-width: 1440px;
-    height: 600px;
+    max-height: 600px;
     display: flex;
 }
 
@@ -231,8 +235,7 @@ body {
 }
 
 .videos .container .wrapper {
-    width: 760px;
-    height: 400px;
+    max-width: 760px;
     margin: 6.2% 8.75% 10%;
     border: 30px solid white;
 }
@@ -246,8 +249,6 @@ body {
 
 .videos .container .nav-container {
     max-width: 533px;
-    width: 100%;
-    height: 100%;
 }
 
 .videos-navigation-container-title {
@@ -260,46 +261,36 @@ body {
 }
 
 .video-swiper-wrapper {
-    align-self: center;
     max-width: 220px;
-    width: 100%;
-    margin: auto;
     display: flex;
 }
 
 .video-swiper-wrapper .container {
-    height: 100%;
     max-width: 160px;
     width: 100%;
     margin: auto;
-    justify-content: space-between;
 }
 
 .video-swiper-wrapper .container .swiper-track {
-    height: 100%;
     transition: 0.15s;
     display: flex;
 }
 
 .video-swiper-wrapper .swiper-button-prev, .video-swiper-wrapper .swiper-button-next {
     font-size: 50px;
+    color: #4e171b;
 }
 
 .video-swiper-wrapper .swiper-button-prev {
     margin-right: 15px;
-    color: #4e171b;
 }
 
 .video-swiper-wrapper .swiper-button-next {
     margin-left: 13px;
-    color: #4e171b;
 }
 
-.video-swiper-wrapper .container .swiper-track .swiper-item {
-    height: 22px;
-    width: 22px;
+.video-swiper-wrapper .container .swiper-track .swiper-item, .video-swiper-active-item {
     background-color: #4e171b;
-    border-radius: 50%;
     margin-right: 14px;
 }
 
@@ -307,39 +298,15 @@ body {
     margin-right: 0;
 }
 
-.video-swiper-active-item {
-    border-radius: 50%;
-    background-color: #4e171b;
-    width: 22px;
-    height: 22px;
-    display: flex;
-    justify-content: center;
-    margin-right: 14px;
-}
-
-.video-swiper-active-item:before {
-    content: '';
-    display: block;
-    border-radius: 50%;
-    background: white;
-    width: 12px;
-    height: 12px;
-    align-self: center;
-}
-
 .intro-about-info {
-    width: 100%;
-    height: 30vh;
     background-color: #fff;
     text-align: center;
-    padding: 80px;
 }
 
 .intro-about-info .title {
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 64px;
-    padding: 30px;
 }
 
 .intro-about-info .content {
@@ -374,11 +341,6 @@ body {
     font-size: 30px;
 }
 
-.tours-wrapper .cards-container {
-    width: 100%;
-    height: 100%;
-}
-
 .tours-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -394,7 +356,7 @@ body {
     background-color: #ffffff;
 }
 
-.tours-cards .content::before {
+.tours-cards .content:before {
     height: 315px;
     width: 100%;
     content: "";
@@ -447,9 +409,8 @@ body {
 /*store section styles start*/
 
 .store-container {
-    max-width: 1440px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .store-container .wrapper {
@@ -459,11 +420,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.store-swiper-wrapper {
-    max-height: 210px;
-    height: 100%;
 }
 
 .store-swiper-wrapper .swiper-button-prev, .store-swiper-wrapper .swiper-button-next {
@@ -477,36 +433,14 @@ body {
 }
 
 .store-swiper-wrapper .swiper-track {
-    display: grid;
-    place-items: center;
-}
-
-.store-swiper-wrapper .swiper-track .swiper-item {
-    height: 22px;
-    width: 22px;
-    background-color: black;
-    border-radius: 50%;
-    margin-bottom: 14px;
-}
-
-.store-swiper-active-item {
-    border-radius: 50%;
-    background-color: black;
-    width: 22px;
-    height: 22px;
     display: flex;
-    justify-content: center;
-    margin-bottom: 14px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.store-swiper-active-item:before {
-    content: '';
-    display: block;
-    border-radius: 50%;
-    background: white;
-    width: 12px;
-    height: 12px;
-    align-self: center;
+.store-swiper-wrapper .swiper-track .swiper-item, .store-swiper-active-item {
+    background-color: black;
+    margin-bottom: 14px;
 }
 
 .store-swiper-wrapper .swiper-track .swiper-item:last-child {
@@ -515,7 +449,6 @@ body {
 
 .store-subtitle-container {
     width: 25%;
-    height: 100%;
     text-align: start;
 }
 
@@ -526,60 +459,24 @@ body {
     rotate: -180deg;
 }
 
-.store-container .cards-container {
-    width: 719px;
-    display: flex;
-    flex-direction: column;
-    align-content: end;
-}
-
 .store-cards {
-    justify-content: end;
     display: flex;
     flex-direction: column;
-    align-content: space-between;
-    margin-right: 108px;
     row-gap: 150px;
 }
 
-.store-cards .card {
-    width: 719px;
-    align-self: end;
-    justify-self: end;
+.store-cards .card:hover .pic {
+    transform: scale(0.95);
 }
 
-.store-cards .card:hover .store-card-pic {
-    transform: scale(1.05);
-}
-
-.store-card-pic {
+.store-cards .card .pic {
     object-fit: cover;
-    width: 100%;
     transition: 0.15s all;
 }
 
 .store-cards .title {
     font-size: 16px;
     font-weight: bold;
-    line-height: 50px;
-    position: absolute;
-}
-
-.store-card-promotion-in-the-tent {
-    width: 719px;
-    height: 495px;
-}
-
-.store-card-starter-package {
-    width: 719px;
-    height: 424px;
-}
-
-.store-card-title-promotion, .store-card-price-promotion {
-    color: black;
-    position: absolute;
-    right: 25px;
-    top: 25px;
 }
 
 /*store section styles end*/
@@ -590,14 +487,12 @@ body {
 /*footer styles start*/
 
 .footer {
-    max-width: 1440px;
-    height: 600px;
     background-color: white;
 }
 
 .footer-icons-wrapper {
-    width: 300px;
-    height: 50px;
+    max-width: 300px;
+    max-height: 50px;
     margin: 20px auto;
 }
 
