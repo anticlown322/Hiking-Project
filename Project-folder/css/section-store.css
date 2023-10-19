@@ -1,4 +1,7 @@
 .store-container {
+    /*
+    max-height: 800px;
+     */
     display: flex;
 }
 
@@ -53,6 +56,7 @@
 }
 
 .store-cards .card:hover .pic {
+
     transform: scale(0.95);
 }
 
