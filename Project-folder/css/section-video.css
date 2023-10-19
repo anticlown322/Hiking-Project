@@ -1,0 +1,73 @@
+.videos {
+    max-width: 1440px;
+    max-height: 600px;
+    display: flex;
+}
+
+.videos .container {
+    max-width: 907px;
+    width: 100%;
+}
+
+.videos .container .wrapper {
+    max-width: 760px;
+    border: 30px solid white;
+}
+
+.videos .container .description {
+    margin-left: 80px;
+    font-family: "Soleto regular";
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.videos .container .nav-container {
+    max-width: 533px;
+}
+
+.videos-navigation-container-title {
+    word-spacing: 2px;
+    text-align: center;
+    font-size: 26px;
+    margin: 50px 30px;
+    font-family: "Soleto bold";
+    color: #4e171b;
+}
+
+.video-swiper-wrapper {
+    max-width: 220px;
+    display: flex;
+}
+
+.video-swiper-wrapper .container {
+    max-width: 160px;
+    width: 100%;
+    margin: auto;
+}
+
+.video-swiper-wrapper .container .swiper-track {
+    transition: 0.15s;
+    display: flex;
+}
+
+.video-swiper-wrapper .swiper-button-prev, .video-swiper-wrapper .swiper-button-next {
+    font-size: 50px;
+    color: #4e171b;
+}
+
+.video-swiper-wrapper .swiper-button-prev {
+    margin-right: 15px;
+}
+
+.video-swiper-wrapper .swiper-button-next {
+    margin-left: 13px;
+}
+
+.video-swiper-wrapper .container .swiper-track .swiper-item, .video-swiper-active-item {
+    background-color: #4e171b;
+    margin-right: 14px;
+}
+
+.video-swiper-wrapper .container .swiper-track .swiper-item:last-child {
+    margin-right: 0;
+}
