@@ -1,0 +1,67 @@
+.store-container {
+    display: flex;
+}
+
+.store-container .wrapper {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.store-swiper-wrapper .swiper-button-prev, .store-swiper-wrapper .swiper-button-next {
+    text-align: center;
+    font-size: 50px;
+    color: black;
+}
+
+.store-swiper-wrapper .swiper-button-prev {
+    margin-bottom: 1px;
+}
+
+.store-swiper-wrapper .swiper-track {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.store-swiper-wrapper .swiper-track .swiper-item, .store-swiper-active-item {
+    background-color: black;
+    margin-bottom: 14px;
+}
+
+.store-swiper-wrapper .swiper-track .swiper-item:last-child {
+    margin-bottom: 5px;
+}
+
+.store-subtitle-container {
+    width: 25%;
+    text-align: start;
+}
+
+.store-subtitle-container .subtitle {
+    font-size: 200px;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    rotate: -180deg;
+}
+
+.store-cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 150px;
+}
+
+.store-cards .card:hover .pic {
+    transform: scale(0.95);
+}
+
+.store-cards .card .pic {
+    object-fit: cover;
+    transition: 0.15s all;
+}
+
+.store-cards .title {
+    font-size: 16px;
+    font-weight: bold;
+}

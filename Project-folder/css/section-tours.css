@@ -1,0 +1,86 @@
+.tours-wrapper {
+    max-width: 1146px;
+    margin: 0 auto;
+}
+
+.tours-subtitle-alt-font, .tours-subtitle {
+    font-size: 64px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.tours-subtitle-alt-font {
+    margin-left: 50px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 84px;
+    font-family: "Verveine Regular";
+    color: #1e5a7c;
+}
+
+.tours-wrapper .paragraph {
+    font-size: 30px;
+}
+
+.tours-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 198px;
+    row-gap: 75px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.tours-cards .card {
+    box-shadow: 0 2px 20px rgba(21, 24, 36, 0.5);
+    background-color: #ffffff;
+}
+
+.tours-cards .content:before {
+    height: 315px;
+    width: 100%;
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tours-card-lake-in-the-mountains::before {
+    background-image: url("../img/jpg/lake-in-the-mountains.jpg");
+}
+
+.tours-card-lake-in-the-forest::before {
+    background-image: url("../img/jpg/lake-in-the-forest.jpg");
+}
+
+.tours-card-snowy-mountains::before {
+    background-image: url("../img/jpg/snowy-mountains.jpg");
+}
+
+.tours-card-group-hiking::before {
+    background-image: url("../img/jpg/group-hiking.jpg");
+}
+
+.tours-card-wrapper {
+    height: 266px;
+    text-align: center;
+}
+
+.tours-card-wrapper .title {
+    text-align: center;
+    word-spacing: 1px;
+    font-family: Myriadpro-bold;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 48px;
+    margin-bottom: 45px;
+}
+
+.tours-card-wrapper .description {
+    margin: 0 auto;
+    font-family: Myriadpro-regular;
+    font-size: 23px;
+    text-align: center;
+}

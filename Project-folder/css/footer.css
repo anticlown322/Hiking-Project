@@ -1,0 +1,20 @@
+.footer {
+    background-color: white;
+}
+
+.footer-icons-wrapper {
+    max-width: 300px;
+    max-height: 50px;
+    margin: 20px auto;
+}
+
+.footer .wrapper .paragraph {
+    text-align: center;
+}
+
+.footer-icons-wrapper .icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    list-style-type: none;
+}
