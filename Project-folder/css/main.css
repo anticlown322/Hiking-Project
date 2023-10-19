@@ -4,3 +4,13 @@
     background: url(../img/jpg/background.jpg) no-repeat center;
     background-size: cover;
 }
+
+.parent{
+    position: relative;
+}
+
+.play-button{
+    position: absolute;
+    top: 32.5%;
+    left: 41.5%;
+}

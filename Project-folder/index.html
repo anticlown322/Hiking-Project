@@ -84,15 +84,23 @@
 
                 <div class="videos">
                     <div class="container">
-                        <div class="wrapper"><img src="img/jpg/video-preview.jpg" alt="Video Preview" class="video-element"></div>
-                        <div class="">
+                        <div class="wrapper parent">
+                            <h3>
+                                <img src="img/jpg/video-preview.jpg" alt="Video Preview" class="video-element">
+                            </h3>
+
+                            <div class="play-button">
+                                <h3>
+                                    <img src="img/png/play-button.png" alt="Video Preview" class="video-element">
+                                </h3>
+                            </div>
+                        </div>
                         <p class="description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.Duis vitae tortor nec arcu
                             condimentum
                             ullamcorper quis eget felis.<br>
                             In posuere elit eget lacus lacinia rutrum eu at leo.
                         </p>
-                        </div>
                     </div>
                     <div class="nav-container">
                         <h3 class="videos-navigation-container-title">Mountain Survival Tutorial</h3>
@@ -192,41 +200,41 @@
 
         <!--store section start-->
         <section class="store">
-                <div class="store-container">
-                    <div class="wrapper">
-                        <div class="store-swiper-wrapper">
-                            <button class="swiper-button-prev fa-solid fa-angle-up"></button>
-                            <div class="swiper-track">
-                                <div class="swiper-item store-swiper-active-item"></div>
-                                <div class="swiper-item"></div>
-                                <div class="swiper-item"></div>
-                                <div class="swiper-item"></div>
-                            </div>
-                            <button class="swiper-button-next fa-solid fa-angle-down"></button>
+            <div class="store-container">
+                <div class="wrapper">
+                    <div class="store-swiper-wrapper">
+                        <button class="swiper-button-prev fa-solid fa-angle-up"></button>
+                        <div class="swiper-track">
+                            <div class="swiper-item store-swiper-active-item"></div>
+                            <div class="swiper-item"></div>
+                            <div class="swiper-item"></div>
+                            <div class="swiper-item"></div>
                         </div>
-                    </div>
-
-                    <div class="store-subtitle-container">
-                        <div class="subtitle">Store</div>
-                    </div>
-
-                    <div class="cards-container">
-                        <div class="store-cards">
-                            <figure class="card store-card-promotion-in-the-tent ">
-                                <img src="img/jpg/promotion-in-the-tent.jpg" alt="Promotion in the tent"
-                                     class="pic">
-                                <figcaption class="title"></figcaption>
-                                <figcaption class="price"></figcaption>
-                            </figure>
-
-                            <figure class="card store-card-starter-package ">
-                                <img src="img/jpg/starter-package.jpg" alt="Starter package" class="pic">
-                                <figcaption class="title"></figcaption>
-                                <figcaption class="price"></figcaption>
-                            </figure>
-                        </div>
+                        <button class="swiper-button-next fa-solid fa-angle-down"></button>
                     </div>
                 </div>
+
+                <div class="store-subtitle-container">
+                    <div class="subtitle">Store</div>
+                </div>
+
+                <div class="cards-container">
+                    <div class="store-cards">
+                        <figure class="card store-card-promotion-in-the-tent ">
+                            <img src="img/jpg/promotion-in-the-tent.jpg" alt="Promotion in the tent"
+                                 class="pic" height="495" width="719">
+                            <figcaption class="title"></figcaption>
+                            <figcaption class="price"></figcaption>
+                        </figure>
+
+                        <figure class="card store-card-starter-package ">
+                            <img src="img/jpg/starter-package.jpg" alt="Starter package" class="pic" height="424" width="719">
+                            <figcaption class="title"></figcaption>
+                            <figcaption class="price"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
         </section>
         <!--store section end-->
     </main>
@@ -237,7 +245,7 @@
         <div class="wrapper">
             <h2 class="footer-subtitle">About us</h2>
             <p class="paragraph">
-                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Duis vitae
+                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae
                 <br>tortor nec arcu condimentum ullamcorper quis eget felis.
                 <br>In posuere elit eget lacus lacinia rutrum eu at leo.
             </p>
@@ -272,9 +280,6 @@
                         </span>
                     </li>
                 </ul>
-            </div>
-            <div>
-
             </div>
         </div>
     </footer>
