@@ -58,7 +58,6 @@
 }
 
 .intro-subtitle {
-
     font-size: 64px;
 }
 
@@ -75,6 +74,7 @@
     max-height: 666px;
     background-color: #fff;
     text-align: center;
+    margin-bottom: calc(12.5% - 2px);
 }
 
 .intro-about-info .title {
