@@ -1,0 +1,95 @@
+.intro-background {
+    height: 665px;
+    width: 100%;
+    background: url(../img/png/bg-sitting-woman.png) no-repeat center;
+    background-size: cover;
+}
+
+.intro-half-container {
+    width: 60.5%;
+    height: 100%;
+    position: relative;
+}
+
+.intro-background{
+    margin-bottom: 6.66%;
+}
+
+.intro-half-container .wrapper {
+    max-width: 324px;
+    max-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top:calc(50% - 27px);
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.intro-half-container .wrapper .swiper-button-prev, .intro-half-container .wrapper .swiper-button-next {
+    text-align: center;
+    font-size: 40px;
+}
+
+.intro-swiper-container {
+    overflow: hidden;
+}
+
+.intro-swiper-container .swiper-track {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: 0.2s linear;
+    position: relative;
+}
+
+.intro-swiper-container .swiper-track .swiper-item {
+    min-width: 90px;
+    max-height: 100px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.intro-swiper-container .swiper-track .intro-swiper-active-item {
+    min-width: 100px;
+    font-size: 100px;
+    font-weight: bold;
+    transition: 0.2s linear;
+}
+
+.intro-subtitle {
+    font-size: 64px;
+}
+
+.intro-subtitle-alt-font {
+    margin-left: 20px;
+    color: rgb(78, 23, 27);
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 84px;
+    font-family: "Verveine", serif;
+}
+
+.intro-about-info {
+    max-height: 666px;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 12.5%;
+}
+
+.intro-about-info .title {
+    padding-top: 12.5%;
+    padding-bottom: calc(6.66% + 2px);
+    font-family: 'TitlingGothicFB Cond Bold', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.intro-about-info .content {
+    font-size: 30px;
+    padding-bottom: 15%;
+}
