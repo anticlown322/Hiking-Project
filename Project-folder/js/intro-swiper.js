@@ -38,8 +38,8 @@ const setIntroPosition = () => {
 }
 
 const checkIntroBtns = () => {
-    introBtnPrev.disabled = introSwiperPosition === 0;
-    introBtnNext.disabled = introSwiperPosition <= -(introItemsCount - introSlidesToShow) * introItemWidth;
+    introBtnPrev.disabled = introCurrentSlide === 1;
+    introBtnNext.disabled = introCurrentSlide === 5;
     introItems[introCurrentSlide].classList.add('intro-swiper-active-item');
 }
 
