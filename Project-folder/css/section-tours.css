@@ -1,5 +1,5 @@
 .tours-section .wrapper {
-    margin-bottom: calc(16% + 3px);
+    margin-bottom: calc(16% + 2px);
 }
 
 .tours-wrapper {
@@ -16,6 +16,7 @@
 
 .tours-subtitle {
     margin-left: calc(-5% - 1px);
+    color: rgb(34,34,33);
 }
 
 .tours-subtitle-alt-font {
@@ -30,7 +31,7 @@
 .tours-wrapper .paragraph {
     text-align: center;
     font-size: 30px;
-    margin-bottom: 15%;
+    margin-bottom: calc(15% - 1px);
     margin-left: calc(-5% + 3px);
 }
 
@@ -92,7 +93,7 @@
 .tours-card-wrapper .description {
     word-spacing: 0.1px;
     margin: 0 auto;
-    font-family: "Soleto regular";
+    font-family: "Soleto regular", sans-serif;
     font-size: 23px;
     text-align: center;
 }
