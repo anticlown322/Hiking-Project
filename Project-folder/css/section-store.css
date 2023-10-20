@@ -48,7 +48,6 @@
     max-height: 1185px;
     width: calc(30.5% - 1px);
     position: relative;
-    padding-top: calc(8% + 8px);
     padding-left: calc(5% + 6px);
 }
 
@@ -126,4 +125,7 @@
     right: calc(25% + 7px);
     bottom: calc(1% + 3px);
     color: white;
+}
+.store-card-starter-package h3{
+    word-spacing: 4px;
 }
