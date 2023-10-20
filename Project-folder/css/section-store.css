@@ -1,15 +1,21 @@
 .store-container {
-    /*
-    max-height: 800px;
-     */
     display: flex;
+    margin-bottom: calc(15% + 10px);
 }
 
 .store-container .wrapper {
+    height: 1185px;
+    max-width: 172px;
+    margin: 0;
     background-color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: calc(30% - 5px);
+}
+
+.store-swiper-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .store-swiper-wrapper .swiper-button-prev, .store-swiper-wrapper .swiper-button-next {
@@ -38,34 +44,64 @@
 }
 
 .store-subtitle-container {
-    width: 25%;
-    text-align: start;
+    max-height: 1185px;
+    width: 30.5%;
+    position: relative;
+    padding-top: calc(10% - 22px);
+    padding-left: calc(5% + 8px);
 }
 
 .store-subtitle-container .subtitle {
-    font-size: 200px;
+    height: 100%;
+    font-size: 250px;
     font-weight: bold;
     writing-mode: vertical-lr;
     rotate: -180deg;
+    color: rgb(34,34,33);
+}
+
+.store-container .cards-container {
+    max-height: 1185px;
+    padding-top: 68px;
 }
 
 .store-cards {
     display: flex;
     flex-direction: column;
-    row-gap: 150px;
+    justify-content: space-between;
+    row-gap: 148px;
+}
+
+.store-cards .card {
+    position: relative;
+    text-align: center;
 }
 
 .store-cards .card:hover .pic {
-
-    transform: scale(0.95);
+    transform: scale(1.05);
 }
 
 .store-cards .card .pic {
+    width: 100%;
+    max-height: 500px;
     object-fit: cover;
     transition: 0.15s all;
 }
 
-.store-cards .title {
-    font-size: 16px;
-    font-weight: bold;
+.store-cards .card h3 {
+    font-family: "Soleto bold", sans-serif;
+    position: absolute;
+}
+
+.store-card-promotion-in-the-tent h3 {
+    font-size: 26.5px;
+    left: calc(32% + 1px);
+    top: calc(17% - 2px);
+}
+
+.store-card-starter-package h3 {
+    position: absolute;
+    bottom: 25px;
+    left: 32%;
+    color: white;
 }
