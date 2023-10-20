@@ -3,6 +3,7 @@
     max-width: 1440px;
     max-height: 600px;
     display: flex;
+    margin-bottom: 10%;
 }
 
 .videos .container {
@@ -11,20 +12,22 @@
 }
 
 .videos .container .wrapper {
-
     max-width: 760px;
     border: 30px solid white;
 }
 
-
-
-.videos .container .description {
+.videos .container .description-wrapper {
     max-width: 760px;
     margin: 0 auto;
-    font-family: "Soleto regular";
+    padding-left: 9px;
+    padding-top: calc(4% + 2px);
+}
+
+.videos .container .description-wrapper .description {
+    width: 100%;
+    font-family: "Soleto regular", sans-serif;
     font-size: 25px;
     line-height: 30px;
-    vertical-align: center;
 }
 
 .videos .nav-container {
@@ -36,8 +39,8 @@
     word-spacing: 2px;
     text-align: center;
     font-size: 26px;
-    font-family: "Soleto bold";
-    color: #4e171b;
+    font-family: "Soleto bold", sans-serif;
+    color: rgb(78, 23, 27);
 }
 
 .video-swiper-wrapper {
@@ -58,7 +61,7 @@
 
 .video-swiper-wrapper .swiper-button-prev, .video-swiper-wrapper .swiper-button-next {
     font-size: 50px;
-    color: #4e171b;
+    color: rgb(78, 23, 27);
 }
 
 .video-swiper-wrapper .swiper-button-prev {

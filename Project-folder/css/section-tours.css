@@ -1,34 +1,45 @@
+.tours-section .wrapper {
+    margin-bottom: calc(16% + 2px);
+}
+
 .tours-wrapper {
     max-width: 1146px;
     margin: 0 auto;
 }
 
 .tours-subtitle-alt-font, .tours-subtitle {
+    text-align: center;
     font-size: 64px;
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 54px;
+}
+
+.tours-subtitle {
+    margin-left: calc(-5% - 1px);
+    color: rgb(34,34,33);
 }
 
 .tours-subtitle-alt-font {
-    margin-left: 3.3%;
+    margin-left: 2.8%;
     font-style: italic;
     font-weight: bold;
     font-size: 84px;
-    font-family: "Verveine Regular";
+    font-family: "Verveine Regular", sans-serif;
     color: #1e5a7c;
 }
 
 .tours-wrapper .paragraph {
     text-align: center;
     font-size: 30px;
-
+    margin-bottom: calc(15% - 1px);
+    margin-left: calc(-5% + 3px);
 }
 
 .tours-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 198px;
-    row-gap: 75px;
+    row-gap: 77px;
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -82,7 +93,7 @@
 .tours-card-wrapper .description {
     word-spacing: 0.1px;
     margin: 0 auto;
-    font-family: "Soleto regular";
+    font-family: "Soleto regular", sans-serif;
     font-size: 23px;
     text-align: center;
 }
