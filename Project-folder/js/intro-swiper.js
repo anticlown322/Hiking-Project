@@ -1,8 +1,5 @@
-
-
-/*intro-swiper script start*/
 let introSwiperPosition = 0;
-let introCurrentSlide = 0;
+let introCurrentSlide = 1;
 const introSlidesToShow = 3;
 const introSlidesToScroll = 1;
 const introContainer = document.querySelector('.intro-swiper-container');
@@ -22,6 +19,7 @@ introBtnNext.addEventListener('click', () => {
     const itemsLeft = introItemsCount - (Math.abs(introSwiperPosition) + introSlidesToShow * introItemWidth) / introItemWidth;
     introSwiperPosition -= itemsLeft >= introSlidesToScroll ? introMovePosition : itemsLeft * introItemWidth;
     setIntroPosition();
+    introItems[introCurrentSlide].classList.remove('intro-swiper-active-item');
     introCurrentSlide++;
     checkIntroBtns();
 })
@@ -30,6 +28,7 @@ introBtnPrev.addEventListener('click', () => {
     const itemsLeft = Math.abs(introSwiperPosition) / introItemWidth;
     introSwiperPosition += itemsLeft >= introSlidesToScroll ? introMovePosition : itemsLeft * introItemWidth;
     setIntroPosition();
+    introItems[introCurrentSlide].classList.remove('intro-swiper-active-item');
     introCurrentSlide--;
     checkIntroBtns();
 })
@@ -41,8 +40,7 @@ const setIntroPosition = () => {
 const checkIntroBtns = () => {
     introBtnPrev.disabled = introSwiperPosition === 0;
     introBtnNext.disabled = introSwiperPosition <= -(introItemsCount - introSlidesToShow) * introItemWidth;
+    introItems[introCurrentSlide].classList.add('intro-swiper-active-item');
 }
 
 checkIntroBtns();
-
-/*intro-swiper script end*/

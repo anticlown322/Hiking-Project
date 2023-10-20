@@ -48,7 +48,7 @@
     max-height: 1185px;
     width: calc(30.5% - 1px);
     position: relative;
-    padding-top: calc(10% - 22px);
+    padding-top: calc(8% + 8px);
     padding-left: calc(5% + 6px);
 }
 
