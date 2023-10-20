@@ -7,7 +7,7 @@
 
 .intro-half-container {
     width: 60.5%;
-    height: 108.5%;
+    height: 100%;
     position: relative;
 }
 
@@ -17,15 +17,15 @@
 
 .intro-half-container .wrapper {
     max-width: 324px;
+    max-height: 100px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     position: absolute;
-    top:calc(50% - 25px);
+    top:calc(50% - 27px);
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
 }
 
 .intro-half-container .wrapper .swiper-button-prev, .intro-half-container .wrapper .swiper-button-next {
@@ -39,22 +39,25 @@
 
 .intro-swiper-container .swiper-track {
     display: flex;
+    align-items: center;
     text-align: center;
-    transition: 0.15s;
+    transition: 0.2s linear;
+    position: relative;
 }
 
 .intro-swiper-container .swiper-track .swiper-item {
-    min-width: 100px;
-    height: 50px;
-    font-size: 33px;
+    min-width: 90px;
+    max-height: 100px;
+    font-size: 28px;
     font-weight: bold;
 }
 
-.intro-swiper-active-item {
+
+.intro-swiper-container .swiper-track .intro-swiper-active-item {
     min-width: 100px;
-    height: 50px;
     font-size: 100px;
     font-weight: bold;
+    transition: 0.2s linear;
 }
 
 .intro-subtitle {

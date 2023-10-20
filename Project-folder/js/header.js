@@ -1,7 +1,7 @@
 (function () {
     const headerWrapper = document.querySelector('.header .wrapper ');
     window.onscroll = () => {
-        if (window.pageYOffset > 50) {
+        if (window.scrollY > 50) {
             headerWrapper.classList.add('header-active');
             headerWrapper.style.paddingTop = "20px";
             headerWrapper.style.paddingBottom = "20px";

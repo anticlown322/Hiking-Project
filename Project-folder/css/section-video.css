@@ -33,19 +33,26 @@
 .videos .nav-container {
     max-width: 533px;
     width: 100%;
+    padding-top: calc(8% + 4px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .videos-navigation-container-title {
     word-spacing: 2px;
     text-align: center;
+    margin-left: -10%;
     font-size: 26px;
     font-family: "Soleto bold", sans-serif;
     color: rgb(78, 23, 27);
+    padding-bottom: calc(16% - 1px);
 }
 
 .video-swiper-wrapper {
-    max-width: 220px;
+    max-width: 150px;
     display: flex;
+    margin-left: -13%;
 }
 
 .video-swiper-wrapper .container {
