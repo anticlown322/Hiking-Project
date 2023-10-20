@@ -43,6 +43,7 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
+    transition: 0.15s all;
 }
 
 .tours-cards .card {
@@ -58,6 +59,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.tours-cards .content:hover {
+    transform: scale(0.95);
 }
 
 .tours-card-lake-in-the-mountains::before {
