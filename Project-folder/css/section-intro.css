@@ -72,11 +72,15 @@
 }
 
 .intro-about-info {
+    max-height: 666px;
     background-color: #fff;
     text-align: center;
 }
 
 .intro-about-info .title {
+    padding-top: 12.5%;
+    padding-bottom: 6.66%;
+    font-family: 'TitlingGothicFB Cond Bold', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 64px;
@@ -84,4 +88,5 @@
 
 .intro-about-info .content {
     font-size: 30px;
+    padding-bottom: 15%;
 }
