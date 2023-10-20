@@ -1,3 +1,7 @@
+.tours-section .wrapper {
+    margin-bottom: calc(16% + 2px);
+}
+
 .tours-wrapper {
     max-width: 1146px;
     margin: 0 auto;
